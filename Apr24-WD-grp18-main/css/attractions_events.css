@@ -1,0 +1,134 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px 70px 70px;
+}
+
+#title {
+    width: 1000px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+.attractions-container {
+    position: relative;
+    justify-content: space-evenly;
+    margin: 25px 80px 80px 80px;
+    
+}
+
+.filterSet {
+    background-color: #3F1651;
+    color: #E53F71;
+    justify-content: space-evenly;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.attractions-container {
+    padding:10px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    position: relative;
+    
+}
+.attractions-box  {
+    position: relative;
+    border-radius: 10px;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+    justify-content: inline;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 25px;
+    background-color: #3F1651;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+
+.attractions-box a {
+    color: #F89F5B;
+    text-decoration: none;
+}
+
+.live-events-container{
+    display: grid;
+    align-items:flex-start;
+    text-align: left;
+    
+}
+
+.live-events-box {
+    border-radius: 40px;
+    display: flex;
+    width: 900px;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #3F1651;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    justify-content: flex;
+}
+
+.liveEventImg img{
+    width: 400px;
+    height: 250px;
+    display: inline;
+    align-content: space-around;
+    border-radius: 40px;
+}
+.event-details{
+    width:450px;
+    padding:20px;
+}
+
+.event-details a {
+    color: #F89F5B;
+    text-decoration: none;
+}
+
+.current-booking-sticky-box{
+    height:180px;
+    width: 30%;
+    position: sticky;
+    left: 1250px;
+    margin: 10px;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: auto auto auto ;
+    background-color: #3F1651;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    align-content: center;
+}
+#booking-slip {
+    margin:-20px
+}
+table{
+    width:300px;
+}
+
+
+.payment-button {
+    background-color: #F89F5B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    align-self: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+.payment-button:hover {
+    opacity: 0.4; 
+}

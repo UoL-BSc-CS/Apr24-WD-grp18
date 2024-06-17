@@ -1,0 +1,188 @@
+/* display settings apply to all sections */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+
+/* styling of brand logo contained in top section */
+h1 {
+    font-size: 130px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+/* styling of slideshow container in top section*/
+.slideshow-container {
+    width: 1000px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    display: flex;
+    animation: slide 9s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideshow-container .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.slogan-text {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+    font-size: 30px;
+}
+
+.slogan-text:hover {
+    opacity: 1;
+}
+
+.buy-tickets-container {
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-tickets-container .buy-tickets-btn {
+    background-color: #3F1651;
+    color: #E53F71;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.buy-tickets-btn:hover {
+    background-color: #9c3587;
+    color: #F89F5B;
+}
+
+/* styling of media-review-container contained in media section*/
+.media-review-container {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;    
+    width: 50%;
+    background: #E53F71;
+    opacity: 0.8;
+    border-radius: 10px 25px 10px 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.media-review-container:hover {
+    opacity: 0.6;
+}
+
+.media-review-container p {
+    color:#3F1651;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* styling of section-popular-attractions-events contained in attractions & events section */
+.section-popular-attractions-events {
+    width: 1200px;
+    text-align: center;   
+}
+
+.section-popular-attractions-events p {
+    color:#FBBEDE;
+}
+
+.attractions-events-gallery {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.attractions-events-box {
+    display: block;
+    height: 280px;
+    padding: 18px;
+    background: #3F1651;
+    border-radius: 10px;
+}
+
+.attractions-events-image img {
+    width: 250px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.see-more-btn {
+    padding: 30px;
+    text-decoration: none;
+    text-align: end;
+    color: #F89F5B;
+}
+
+.see-more-btn:hover {
+    opacity: 0.4;
+}
+
+/* styling of visitor-comment-container contained in visitos' comments section */
+.visitor-comment-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    width: 50%;
+    background: #E53F71;
+    opacity: 0.8;
+    border-radius: 10px 25px 10px 25px;
+    text-align: center;   
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.visitor-comment-container p {
+    color:#3F1651;
+}
