@@ -15,7 +15,7 @@ section {
 .attractions-container {
     position: relative;
     justify-content: space-evenly;
-    margin: 0px 80px 80px 80px;
+    margin: 25px 80px 80px 80px;
     
 }
 
@@ -33,7 +33,6 @@ section {
 }
 
 .attractions-container {
-    width: 1000px;
     padding:10px;
     display: grid;
     grid-template-columns: auto auto auto ;
@@ -43,24 +42,18 @@ section {
 .attractions-box  {
     position: relative;
     border-radius: 10px;
-    width: 320px;
-    height: 360px;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
     justify-content: inline;
     display: inline-flex;
     flex-direction: column;
-    margin: 10px;
-    margin-bottom: 30px;
+    margin: 25px;
     background-color: #3F1651;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
-.attractions-img {
-    border-radius: 10px 10px 0 0;
-}
 
-.attractions-text {
-    padding: 20px;
-}
 
 .attractions-box a {
     color: #F89F5B;
@@ -68,7 +61,6 @@ section {
 }
 
 .live-events-container{
-    margin-top: 20px;
     display: grid;
     align-items:flex-start;
     text-align: left;
@@ -76,22 +68,23 @@ section {
 }
 
 .live-events-box {
-    border-radius: 10px;
+    border-radius: 40px;
     display: flex;
     width: 900px;
-    height: 250px;
-    margin-bottom: 30px;
+    height: 300px;
+    margin-bottom: 20px;
     background-color: #3F1651;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
     justify-content: flex;
 }
 
-.liveEventImg {
+.liveEventImg img{
     width: 400px;
     height: 250px;
     display: inline;
     align-content: space-around;
-    border-radius: 10px 0 0 10px;
+    border-radius: 40px;
 }
 .event-details{
     width:450px;
@@ -105,9 +98,9 @@ section {
 
 .current-booking-sticky-box{
     height:180px;
-    width: 600px;
+    width: 30%;
     position: sticky;
-    left: 1000px;
+    left: 1250px;
     margin: 10px;
     border-radius: 10px;
     display:grid;
@@ -117,11 +110,6 @@ section {
     padding: 20px;
     align-content: center;
 }
-
-.current-booking-title {
-    margin-right: 0;
-}
-
 #booking-slip {
     margin:-20px
 }
