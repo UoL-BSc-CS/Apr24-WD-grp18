@@ -327,8 +327,8 @@ h2 {
     z-index: 9;
 }
 
-#rr1:checked ~ .comment-block-status #dot1,
-#rr2:checked ~ .comment-block-status #dot2,
-#rr3:checked ~ .comment-block-status #dot3 {
+#rr1:checked ~ .comment-block-status #d1,
+#rr2:checked ~ .comment-block-status #d2,
+#rr3:checked ~ .comment-block-status #d3 {
     background: #fff;
 }
