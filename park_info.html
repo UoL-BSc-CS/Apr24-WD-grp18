@@ -32,15 +32,16 @@
     </header>
 
     <main>
-        <!-- body content containing 5 main sections here -->
+        <!-- body content containing 8 main sections here -->
 
         <!-- Section 1- Title section  -->
         <section>
             <h1 id="title">PARK Information</h1>
             <div class="park-image-container">   
-                <img class="park-image" src="assets/park_info_assets/park.jpg" alt="Park Image">
+                <img class="park-image" src="assets/park_info_assets/park.jpg" alt="A scenic view of the park" aria-label="Park Image">
             </div>
         </section>
+
 
         <!-- Section 2 - About Us section  -->
         <section>
@@ -48,20 +49,23 @@
                 <h2 class="about-us-title">About Us</h2>
                 <p class="about-us-text">
                     Our horror themed park was founded in 2007 by John Horror who was bored with the routine design
-                    of theme parks. He had the vision of introducing a change to classic theme park designs. Since 2007
-                    we are serving people of all ages looking for a thrill experience unlike any other.
+                    of theme parks. He had the vision of introducing a change to classic theme park designs.
+                    Since 2007 we are serving people of all ages looking for a thrill experience unlike any other.
                 </p>
             </div>
         </section>
 
-        <!-- Section 3 - Testimonial section-->
+
+        <!-- Section 3 - Testimonial section -->
         <section>
             <h2 class="testimonials-title">What our other clients have said about us</h2>
             <div class="testimonials-container">
+
+                <!-- Testimonial 1 -->
                 <div class="testimonial">
-                    <p class="testimonial-text"><q>A different experience</q></p>  
+                    <blockquote class="testimonial-text"><q>A different experience</q></blockquote>
                     <div class="testimonial-user">
-                        <img class="testimonial-image" src="assets/park_info_assets/avater.png" alt="Avatar Image">
+                        <img class="testimonial-image" src="assets/park_info_assets/avatar.png" alt="Avatar Image">
                         <div>
                             <p class="testimonial-name">Jack Shepard</p>
                             <p class="testimonial-role">Parent</p>
@@ -72,10 +76,11 @@
                     </a>
                 </div>
 
+                <!-- Testimonial 2 -->
                 <div class="testimonial">
-                    <p class="testimonial-text"><q>Terrifying and thrilling at the same time</q></p> 
+                    <blockquote class="testimonial-text"><q>Terrifying and thrilling at the same time</q></blockquote>
                     <div class="testimonial-user">
-                        <img class="testimonial-image" src="assets/park_info_assets/avater2.png" alt="Avatar Image">
+                        <img class="testimonial-image" src="assets/park_info_assets/avatar2.png" alt="Avatar Image">
                         <div>
                             <p class="testimonial-name">Clara Feel</p>
                             <p class="testimonial-role">Parent</p>
@@ -86,10 +91,11 @@
                     </a>
                 </div>
 
+                <!-- Testimonial 3 -->
                 <div class="testimonial">
-                    <p class="testimonial-text"><q>That was the time of my life</q></p>
+                    <blockquote class="testimonial-text"><q>That was the time of my life</q></blockquote>
                     <div class="testimonial-user">
-                        <img class="testimonial-image" src="assets/park_info_assets/avater3.png" alt="Avatar Image">
+                        <img class="testimonial-image" src="assets/park_info_assets/avatar3.png" alt="Avatar Image">
                         <div>
                             <p class="testimonial-name">Kyle</p>
                             <p class="testimonial-role">Age 9</p>
@@ -99,14 +105,17 @@
                         <div class="see-more-text">See More</div>
                     </a>
                 </div>
+
             </div>
         </section>
 
 
-        <!-- Section 4 - Ticket Prices and Packages secion -->
+        <!-- Section 4 - Ticket Prices and Packages section -->
         <section>
             <h2 class="ticket-title">Ticket Prices and Packages</h2>
             <div id="ticket-options">
+
+                <!-- Daily Access Ticket Option -->
                 <div class="ticket-option" id="daily-access">
                     <h3>Daily access</h3>
                     <p class="price">$15 <span>per person</span></p>
@@ -117,7 +126,8 @@
                     </ul>
                     <button class="select-button">Select</button>
                 </div>
-        
+
+                <!-- Two-Day Access Ticket Option -->
                 <div class="ticket-option" id="two-day-access">
                     <h3>2 Days access</h3>
                     <p class="price">$25 <span>per person</span></p>
@@ -129,6 +139,7 @@
                     <button class="select-button">Select</button>
                 </div>
         
+                <!-- Season Pass Ticket Option -->
                 <div class="ticket-option" id="season-pass">
                     <h3>Season pass</h3>
                     <p class="price">$279 <span>per month</span></p>
@@ -138,8 +149,10 @@
                     </ul>
                     <button class="select-button">Select</button>
                 </div>
+
             </div>
         </section>
+
 
         <!-- Section 5 - Park Facilities section -->
         <section>
@@ -147,6 +160,8 @@
             
             
             <div class="facility-container">
+
+                <!-- Restaurant Facility Section -->
                 <a href="#" class="facility-section-link">
                     <div class="facility-section" id="restaurant-section">
                         <div class="facility-text">
@@ -166,6 +181,7 @@
                     </div>
                 </a>
                 
+                <!-- Souvenir Shop Facility Section -->
                 <a href="#" class="facility-section-link">
                     <div class="facility-section" id="souvenir-shop-section">
                         <div class="facility-text">
@@ -202,17 +218,27 @@
             </div>
         </section>
         
+
         <!-- Section 7 - Map and Working hours section -->
         <section>
             <div class="map-working-hours-container">
+                
+                <!-- Map -->
                 <div class="map-container">
-                    <!-- src path is subject to change -->
                     <img src="assets/park_info_assets/map.jpg" alt="Park Map" class="park-map">
                     <button class="download-map">Download Map</button>
                 </div>
+
+                <!-- Working Hours -->
                 <div class="working-hours">
                     <h2>Working Hours</h2>
                     <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
                         <tbody>
                             <tr>
                                 <td>Monday</td>
@@ -235,11 +261,11 @@
                                 <td>09:00 - 22:00</td>
                             </tr>
                             <tr>
-                                <td>Caturday</td>
+                                <td>Saturday</td>
                                 <td>09:00 - 22:00</td>
                             </tr>
                             <tr>
-                                <td>Sundea</td>
+                                <td>Sunday</td>
                                 <td>09:00 - 19:00</td>
                             </tr>
                         </tbody>
@@ -247,6 +273,8 @@
                 </div>
             </div>
         </section>
+
+
         <!-- Section 8 - containing the bottom menu and the social media links of the Theme Park -->
         <section>
             <div class="bottom-section">

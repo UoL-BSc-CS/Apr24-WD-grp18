@@ -2,7 +2,6 @@ main {
     color: #FBBEDE;
 }
 
-/* park_info.css */
 section {
     display: flex;
     flex-direction: column;
@@ -11,12 +10,12 @@ section {
     z-index: 90;
 }    
     
-/* Section 1: Title Section */
+/*  Section 1- Title section */
 #title {
-  width: 1000px;
-  text-align: center;
-  padding: 20px;  
-  font-size: 40px;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;  
+    font-size: 40px;
 }
 
 .park-image-container {
@@ -27,13 +26,13 @@ section {
 }
 
 .park-image {
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
     
-/* Section 2: About Us */
+/* Section 2 - About Us section */
 .about-us {
     text-align: justify;
     margin: auto 80px 80px 80px;
@@ -49,7 +48,7 @@ section {
     overflow-wrap: break-word;
 }
 
-/* Section 3: Testimonials */
+/* Section 3 - Testimonial section */
 .testimonials-title {
     text-align: center;
     margin: auto 40px 20px 40px;
@@ -117,9 +116,7 @@ section {
 }
 
 
- 
-
-/* Section 4: Ticket Options */
+/* Section 4 - Ticket Prices and Packages section */
 .ticket-title {
     text-align: left; 
     margin: auto 80px 20px 80px;
@@ -183,7 +180,7 @@ section {
     margin-bottom: 20px;
 }
     
-/* Section 5: Park Facilities */
+/* Section 5 - Park Facilities section */
 #park-facilities {
     text-align: left;
     margin: 20px 80px;
@@ -197,7 +194,7 @@ section {
     margin: auto 80px;
 }
 
-.facility-container a{
+.facility-container a {
     text-decoration: none;
     color: inherit;
 }
@@ -252,7 +249,7 @@ section {
     border-radius: 0 10px 10px 0;
 }
 
-/* Section 6: Having a Safe Visit */
+/* Section 6 - Having a Safe Visit section */
 .safety-title {
     text-align: left;
     margin: 20px 80px;
@@ -273,7 +270,7 @@ section {
     margin-bottom: 5px;
 }
    
-/* Section 7: Map and Working Hours */
+/* Section 7 - Map and Working hours section */
 .map-working-hours-container {
     display: flex;
     margin: 40px 40px;
