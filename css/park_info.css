@@ -1,5 +1,5 @@
 main {
-    color: #fbbede;
+    color: var(--theme-1);
 }
 
 section {
@@ -70,9 +70,9 @@ section {
     min-width: 250px;
     padding: 20px;
     margin: 20px;
-    background-color: #3f1651;
+    background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px var(--opaque);
 }
 
 .testimonial-text {
@@ -106,7 +106,7 @@ section {
 }
 
 .see-more-btn {
-    color: #f89f5b;
+    color: var(--theme-2);
     text-align: end;
     text-decoration: none;
 }
@@ -139,9 +139,9 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
-    background-color: #3f1651;
+    background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px var(--opaque);
 }
 
 .price {
@@ -159,10 +159,10 @@ section {
     margin-top: 20px;
     color: #fff;
     cursor: pointer;
-    background-color: #f89f5b;
+    background-color: var(--theme-2);
     border: none;
     border-radius: 5px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px var(--opaque);
 }
 
 .select-button:hover {
@@ -201,9 +201,9 @@ section {
     display: flex;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #3f1651;
+    background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px var(--opaque);
 }
 
 .facility-section:hover {
@@ -235,7 +235,7 @@ section {
     position: absolute;
     bottom: 0;
     left: 20px;
-    color: #f89f5b;
+    color: var(--theme-2);
 }
 
 .facility-image {
@@ -285,7 +285,7 @@ section {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px var(--opaque);
 }
 
 .download-map {
@@ -294,7 +294,7 @@ section {
     left: 10px;
     padding: 10px 20px;
     color: #fff;
-    background-color: #f89f5b;
+    background-color: var(--theme-2);
     border: none;
     border-radius: 5px;
 }
@@ -308,9 +308,9 @@ section {
     width: 50%;
     padding: 20px;
     margin-left: 40px;
-    background-color: #3f1651;
+    background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px var(--opaque);
 }
 
 .working-hours table {

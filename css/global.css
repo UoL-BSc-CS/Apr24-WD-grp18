@@ -5,6 +5,16 @@
     margin: 0;
 }
 
+:root {
+    --theme-1: #fbbede;
+    --theme-2: #f89f5b;
+    --theme-3: #e53f71;
+    --theme-4: #9c3587;
+    --theme-5: #653780;
+    --theme-6: #3f1651;
+    --opaque: rgba(0, 0, 0, 0.6);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -25,7 +35,7 @@ header {
     min-width: 200px;
     max-width: inherit;
     max-height: 150px;
-    background-color: #9c3587;
+    background-color: var(--theme-4);
 }
 
 header h2 {
@@ -34,7 +44,7 @@ header h2 {
     margin-right: 20px;
     margin-left: 60px;
     font-size: 50px;
-    color: #f89f5b;
+    color: var(--theme-2);
 }
 
 header .nav-menu {
@@ -42,7 +52,7 @@ header .nav-menu {
     flex: 50%;
     align-items: center;
     justify-content: space-around;
-    color: #e53f71;
+    color: var(--theme-3);
 }
 
 header .nav-btn {
@@ -59,13 +69,13 @@ header .nav-btn .nav-btn-text {
 /* Change colour on link of the nav-btn */
 .nav-btn:link,
 .nav-btn:visited {
-    color: #f89f5b;
+    color: var(--theme-2);
 }
 
 /* Change colour on hover the nav-btn */
 .nav-btn:hover {
-    color: #e53f71;
-    background-color: #653780;
+    color: var(--theme-3);
+    background-color: var(--theme-5);
 }
 
 .bookings-indicator {
@@ -75,15 +85,15 @@ header .nav-btn .nav-btn-text {
     margin-right: 40px;
     margin-left: 20px;
     font-size: 25px;
-    color: #e53f71;
+    color: var(--theme-3);
     text-align: center;
-    background-color: #3f1651;
+    background-color: var(--theme-6);
     border-radius: 15px 30px;
 }
 
 main {
-    color: #fbbede;
-    background-color: #653780;
+    color: var(--theme-1);
+    background-color: var(--theme-5);
 }
 
 footer {
@@ -91,13 +101,13 @@ footer {
     flex-direction: column;
     height: 20px;
     padding: 20px;
-    background-color: #9c3587;
+    background-color: var(--theme-4);
 }
 
 footer .footer-content {
     align-items: center;
     font-size: 12px;
-    color: #e53f71;
+    color: var(--theme-3);
     text-align: center;
 }
 
@@ -110,7 +120,7 @@ footer .footer-content {
 /* Change colour on link of the back-to-top */
 .back-to-top-btn a:link,
 .back-to-top-btn a:visited {
-    color: #f89f5b;
+    color: var(--theme-2);
 }
 
 /* Styling of bottom section */
@@ -135,12 +145,12 @@ footer .footer-content {
 
 .bottom-brand-logo h3 {
     font-size: 30px;
-    color: #f89f5b;
+    color: var(--theme-2);
 }
 
 hr {
     width: 80%;
-    border-color: #3f1651;
+    border-color: var(--theme-6);
 }
 
 .social-media-box {
@@ -159,9 +169,9 @@ hr {
     min-width: 50px;
     height: 50px;
     font-size: 24px;
-    color: #e53f71;
+    color: var(--theme-3);
     text-decoration: none;
-    background: #3f1651;
+    background: var(--theme-6);
     border-radius: 50%;
 }
 

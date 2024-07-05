@@ -66,7 +66,7 @@ h1 {
     height: 100%;
     font-size: 30px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--opaque);
     border-radius: 10px 10px 0 0;
     opacity: 0;
     transition: 0.6s;
@@ -91,16 +91,16 @@ h1 {
     width: 100%;
     padding: 10px;
     font-size: 20px;
-    color: #e53f71;
+    color: var(--theme-3);
     text-align: center;
     text-decoration: none;
-    background-color: #3f1651;
+    background-color: var(--theme-6);
     border-radius: 0 0 10px 10px;
 }
 
 .buy-tickets-btn:hover {
-    color: #f89f5b;
-    background-color: #9c3587;
+    color: var(--theme-2);
+    background-color: var(--theme-4);
 }
 
 /* Styling of media-review-container contained in media section and visitor-comment-container contained in visitors' comments section */
@@ -126,9 +126,9 @@ h1 {
     height: 100%;
     padding: 10px;
     text-align: center;
-    background: #e53f71;
+    background: var(--theme-3);
     border-radius: 10px 25px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px var(--opaque);
 }
 
 .quotes-block > figure blockquote {
@@ -146,7 +146,7 @@ h1 {
     top: 0;
     left: 8px;
     font-size: 48px;
-    color: #f89f5b;
+    color: var(--theme-2);
     content: open-quote;
 }
 
@@ -155,19 +155,19 @@ h1 {
     /* top or bottom: 0; depends on the length of the content and is unique to the section */
     right: 8px;
     font-size: 48px;
-    color: #f89f5b;
+    color: var(--theme-2);
     content: close-quote;
 }
 
 .quotes-block > figure figcaption {
     font-size: 16px;
-    color: #3f1651;
+    color: var(--theme-6);
 }
 
 .quotes-block label {
     z-index: 99;
-    color: #3f1651;
-    text-shadow: 0 0 12px #e53f71;
+    color: var(--theme-6);
+    text-shadow: 0 0 12px var(--theme-3);
     cursor: pointer;
 }
 
@@ -186,7 +186,7 @@ h1 {
     height: 18px;
     margin: 0 2px;
     cursor: pointer;
-    background: #3f1651;
+    background: var(--theme-6);
     border-radius: 50%;
     opacity: 0.6;
 }
@@ -247,7 +247,7 @@ h2 {
 }
 
 .section-popular-attractions-events p {
-    color: #fbbede;
+    color: var(--theme-1);
 }
 
 .attractions-events-gallery {
@@ -261,7 +261,7 @@ h2 {
     display: block;
     height: 280px;
     padding: 0;
-    background: #3f1651;
+    background: var(--theme-6);
     border-radius: 10px;
 }
 
@@ -274,7 +274,7 @@ h2 {
 
 .see-more-btn {
     padding: 30px;
-    color: #f89f5b;
+    color: var(--theme-2);
     text-align: end;
     text-decoration: none;
 }
