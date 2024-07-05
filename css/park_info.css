@@ -1,5 +1,5 @@
 main {
-    color: #FBBEDE;
+    color: #fbbede;
 }
 
 section {
@@ -8,13 +8,13 @@ section {
     justify-content: center;
     align-items: center;
     z-index: 90;
-}    
-    
+}
+
 /*  Section 1- Title section */
 #title {
     width: 1000px;
     text-align: center;
-    padding: 20px;  
+    padding: 20px;
     font-size: 40px;
 }
 
@@ -31,7 +31,7 @@ section {
     height: 100%;
     object-fit: contain;
 }
-    
+
 /* Section 2 - About Us section */
 .about-us {
     text-align: justify;
@@ -60,7 +60,7 @@ section {
     flex-wrap: wrap;
     margin: auto 40px 80px 40px;
 }
-    
+
 .testimonial {
     border-radius: 10px;
     width: 300px;
@@ -71,10 +71,10 @@ section {
     flex-direction: column;
     justify-content: space-between;
     margin: 20px;
-    background-color: #3F1651;
+    background-color: #3f1651;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
-    
+
 .testimonial-text {
     text-align: center;
     word-wrap: break-word;
@@ -94,35 +94,33 @@ section {
 .testimonial-text q {
     font-size: 1.2em;
 }
-    
+
 .testimonial-image {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-    
+
 .testimonial-name {
     font-weight: bold;
-} 
+}
 
 .see-more-btn {
     text-decoration: none;
     text-align: end;
-    color: #F89F5B;
+    color: #f89f5b;
 }
 
 .see-more-btn:hover {
     opacity: 0.4;
 }
 
-
 /* Section 4 - Ticket Prices and Packages section */
 .ticket-title {
-    text-align: left; 
+    text-align: left;
     margin: auto 80px 20px 80px;
-    width: calc(100% - 160px); 
+    width: calc(100% - 160px);
 }
-
 
 #ticket-options {
     display: flex;
@@ -131,7 +129,7 @@ section {
     margin: auto 40px 80px 40px;
     align-items: stretch;
 }
-    
+
 .ticket-option {
     padding: 20px;
     border-radius: 10px;
@@ -142,21 +140,21 @@ section {
     justify-content: space-between;
     min-height: 200px;
     margin-bottom: 20px;
-    background-color: #3F1651;
+    background-color: #3f1651;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
-    
+
 .price {
     font-size: 2em;
     margin-bottom: 10px;
 }
-    
+
 .price span {
     font-size: 0.6em;
 }
-    
+
 .select-button {
-    background-color: #F89F5B;
+    background-color: #f89f5b;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -168,7 +166,7 @@ section {
 }
 
 .select-button:hover {
-    opacity: 0.4; 
+    opacity: 0.4;
 }
 
 .ticket-option ul {
@@ -179,7 +177,7 @@ section {
     flex-grow: 1;
     margin-bottom: 20px;
 }
-    
+
 /* Section 5 - Park Facilities section */
 #park-facilities {
     text-align: left;
@@ -199,13 +197,12 @@ section {
     color: inherit;
 }
 
-
 .facility-section {
     border-radius: 10px;
     display: flex;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #3F1651;
+    background-color: #3f1651;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -238,9 +235,8 @@ section {
     position: absolute;
     left: 20px;
     bottom: 0;
-    color: #F89F5B;
+    color: #f89f5b;
 }
-
 
 .facility-image {
     width: 500px;
@@ -260,16 +256,15 @@ section {
     margin-bottom: 80px;
 }
 
-.safety-container p{
+.safety-container p {
     margin-bottom: 10px;
 }
-
 
 .safety-text ul li {
     list-style: disc;
     margin-bottom: 5px;
 }
-   
+
 /* Section 7 - Map and Working hours section */
 .map-working-hours-container {
     display: flex;
@@ -283,7 +278,7 @@ section {
     width: 50%;
     margin: 0 auto;
 }
-    
+
 .park-map {
     width: 100%;
     height: auto;
@@ -292,12 +287,12 @@ section {
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
-    
+
 .download-map {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #F89F5B;
+    background-color: #f89f5b;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -312,7 +307,7 @@ section {
 .working-hours {
     margin-left: 40px;
     width: 50%;
-    background-color: #3F1651;
+    background-color: #3f1651;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
@@ -333,4 +328,3 @@ section {
     padding: 8px;
     border: 1px solid #ccc;
 }
-

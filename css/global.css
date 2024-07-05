@@ -8,7 +8,7 @@
 body {
     width: 100%;
     min-width: min-content;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -29,13 +29,13 @@ header {
     z-index: 100;
 }
 
-header h2 { 
+header h2 {
     flex: 40%;
     margin-left: 60px;
     margin-right: 20px;
     font-size: 50px;
-    color: #F89F5B;
-    min-width:max-content;
+    color: #f89f5b;
+    min-width: max-content;
 }
 
 header .nav-menu {
@@ -43,7 +43,7 @@ header .nav-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color:#E53F71;
+    color: #e53f71;
 }
 
 header .nav-btn {
@@ -53,30 +53,30 @@ header .nav-btn {
     min-height: 100%;
 }
 header .nav-btn .nav-btn-text {
-    min-width:max-content;
+    min-width: max-content;
 }
 
 /* change color on link of the nav-btn */
 .nav-btn:link {
-    color: #F89F5B;
+    color: #f89f5b;
 }
 
 .nav-btn:visited {
-    color: #F89F5B;
+    color: #f89f5b;
 }
 
 /* change color on hover the nav-btn */
 .nav-btn:hover {
     background-color: #653780;
-    color: #E53F71;
+    color: #e53f71;
 }
 
 .bookings-indicator {
-    flex:10%;
+    flex: 10%;
     margin-left: 20px;
     margin-right: 40px;
-    background-color: #3F1651;
-    color: #E53F71;
+    background-color: #3f1651;
+    color: #e53f71;
     padding: 25px;
     border-radius: 15px 30px 15px 30px;
     font-size: 25px;
@@ -86,10 +86,10 @@ header .nav-btn .nav-btn-text {
 
 main {
     background-color: #653780;
-    color: #FBBEDE;
+    color: #fbbede;
 }
 
-footer {    
+footer {
     background-color: #9c3587;
     height: 20px;
     padding: 20px;
@@ -98,7 +98,7 @@ footer {
 }
 
 footer .footer-content {
-    color: #E53F71;
+    color: #e53f71;
     font-size: 12px;
     align-items: center;
     text-align: center;
@@ -112,11 +112,11 @@ footer .footer-content {
 
 /* change color on link of the back-to-top */
 .back-to-top-btn a:link {
-    color: #F89F5B;
+    color: #f89f5b;
 }
 
 .back-to-top-btn a:visited {
-    color: #F89F5B;
+    color: #f89f5b;
 }
 
 /* styling of bottom section */
@@ -141,12 +141,12 @@ footer .footer-content {
 
 .bottom-brand-logo h3 {
     font-size: 30px;
-    color:#F89F5B;
+    color: #f89f5b;
 }
 
 hr {
     width: 80%;
-    border-color:#3F1651;
+    border-color: #3f1651;
 }
 
 .social-media-box {
@@ -159,14 +159,14 @@ hr {
 }
 
 .social-media-icon {
-    background: #3F1651;
+    background: #3f1651;
     min-width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#E53F71;
+    color: #e53f71;
     text-decoration: none;
     font-size: 24px;
 }
@@ -176,10 +176,9 @@ hr {
     transition: opacity 150ms;
 }
 
-
 /* enable responsive layout - change to nav-btn row to single column */
 @media (max-width: 1000px) {
-    header h2 { 
+    header h2 {
         flex: 30%;
     }
     header .nav-menu {
@@ -192,6 +191,6 @@ hr {
     }
 
     .bookings-indicator {
-        flex:10%;
+        flex: 10%;
     }
 }

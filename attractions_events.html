@@ -1,273 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Head section containing the title, description and meta information of the home page -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
-    <meta name="keywords" content="theme park,amusement park,attractions,leisure,recreation" />
-    <meta name="author" content="web-development-group18" />
-    <title>Attractions & Events – Theme Park</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="manifest" href="assets/site.webmanifest">
-    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#653780">
-    <meta name="apple-mobile-web-app-title" content="Theme Park" />
-    <meta name="application-name" content="Theme Park" />
-    <!-- SEO tags -->
-    <meta name="description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
-    <meta property="og:title" content="Theme Park" />
-    <meta property="og:description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
-    <meta property="og:type" content="website" />
-    <!-- We don't know the absolute URL before uploading -->
-    <meta property="og:url" content="https://example.com" />
-    <meta property="og:image" content="https://example.com/assets/og-image.jpg" />
-    <meta name="twitter:title" content="Theme Park" />
-    <meta name="twitter:description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://example.com/assets/og-image.jpg" />
-    <!-- Icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Global styles -->
-    <link rel="stylesheet" href="css/global.css">
-    <!-- Local styles -->
-    <link rel="stylesheet" href="css/attractions_events.css">
-</head>
-<body>
-    <header>
-          <h2 class="brand-logo">THEME PARK</h2>
-          <div class="nav-menu">
-              <a class="nav-btn" href="index.html">
-                  <div class="nav-btn-text">Home</div>
-              </a>
-              <a class="nav-btn" href="attractions_events.html">
-                  <div class="nav-btn-text">Attractions & Events</div>
-              </a>
-              <a class="nav-btn" href="park_info.html">
-                  <div class="nav-btn-text">Park Information</div>
-              </a>
-          </div> 
-          <div class="bookings-indicator">
-              <span class="bookings-text">Bookings (5)</span>
-          </div>
-    </header>
-    
-    <main>
-        <!-- Main content section content -->
-
-        <!-- Top section -->
-        <section>
-            <br>
-            <h1 id="title">Attractions & Events</h1>
-            <div class="Filter-buttons"> 
-                <p>Events - <time datetime="2024-05-21T09:00+01:00">21 May 2024</time>.</p>
-                <button class="filterSet">Default</button>
-                <button class="filterSet">A-Z</button>
-                <button class="filterSet">List View</button>
-            </div>
-        </section>
-
-        <!-- Attractions section -->
-        <section>
-            <h2>Attractions</h2>
-            <div class="attractions-container">
-                
-                <div class="attractions-box">
-                <div class = "attraction-image-container">                     <img src="assets/attractions_events_assets/roller_coaster.jpeg" alt="Attraction Image" width="320" height="227" class="attractions-img">
-                    </div>
-                    <div class="attractions-text">
-                    <h3> Attraction 1</h3>
-                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
-                    <a href="#">
-                        <div class="attractions-details">Ride Description...</div>
-                    </a>
-                    </div>
-                </div>
-                
-                <div class="attractions-box">
-                <div class = "attraction-image-container">                     <img src="assets/attractions_events_assets/carousel.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img">
-                    </div>
-                    <div class="attractions-text">
-                    <h3> Attraction 2</h3>
-                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
-                    <a href="#">
-                        <div class="attractions-details">Ride Description...</div>
-                    </a>
-                    </div>
-                </div>
-                
-                 <div class="attractions-box">
-                <div class = "attraction-image-container">                     <img src="assets/attractions_events_assets/water_ride.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img">
-                    </div>
-                    <div class="attractions-text">
-                    <h3> Attraction 3</h3>
-                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
-                    <a href="#">
-                        <div class="attractions-details">Ride Description...</div>
-                    </a>
-                    </div>
-                </div>
-                
-                 <div class="attractions-box">
-                <div class = "attraction-image-container">                     <img src="assets/attractions_events_assets/360.jpeg" alt="Attraction Image" width="320" height="227" class="attractions-img">
-                    </div>
-                    <div class="attractions-text">
-                    <h3> Attraction 4</h3>
-                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
-                    <a href="#">
-                        <div class="attractions-details">Ride Description...</div>
-                    </a>
-                    </div>
-                </div>
-                
-                 <div class="attractions-box">
-                <div class = "attraction-image-container">                     <img src="assets/attractions_events_assets/catterpiller_ride.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img">
-                    </div>
-                    <div class="attractions-text">
-                    <h3> Attraction 5</h3>
-                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
-                    <a href="#">
-                        <div class="attractions-details">Ride Description...</div>
-                    </a>
-                    </div>
-                </div>
-                
-                 <div class="attractions-box">
-                <div class = "attraction-image-container">                     <img src="assets/attractions_events_assets/Twirl.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img">
-                    </div>
-                    <div class="attractions-text">
-                    <h3> Attraction 6</h3>
-                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
-                    <a href="#">
-                        <div class="attractions-details">Ride Description...</div>
-                    </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section>
-            <h2 class="live-events-title">Live Events</h2>
-            <div class="live-events-container">
-                <div class="live-events-box">
-        
-                
-                    <img src="assets/attractions_events_assets/event.jpg" alt="Live Event Image" class="liveEventImg">
-                    
-                    <div class="event-details">
-                    <h3> Event 1</h3>
-                    <br>
-                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
-                    <br>
-                    <a href="#">
-                        <div >Events Description...</div>
-                    </a>
-                </div>
-                    </div>
-
-
-                
-                <div class="live-events-box">
-                
-                <img src="assets/attractions_events_assets/Event_2.jpeg" alt="Live Event Image" class="liveEventImg">
-                    
-                    <div class="event-details">
-                    <h3> Event 2</h3>
-                    <br>
-                    <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
-                    <br>
-                    <a href="#">
-                    <div >Events Description...</div>
-                    </a>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <aside class="current-booking-sticky-box">
-            <h3 class="current-booking-title">Current Booking Summary</h3>
-            <div id="booking-slip" > 
-            <table>
-               <tr>
-                  <td>Number of Adults x 2</td>
-                  <td>$30.12</td>
-               </tr>
-               <tr>
-                  <td>Number of Children x 3</td>
-                  <td>$30.44</td>
-               </tr>
-               <tr>
-                  <td>Subtotal</td>
-                  <td>$60.56</td>
-               </tr>
-               <tr>
-                  <td>Tax</td>
-                  <td>$2.00</td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Total</b>
-                  </td>
-                  <td>
-                     <b>$62.56</b>
-                  </td>
-               </tr>
-             </table>
-            </div>
-            <div><button type="button" onclick="alert('Proceeding to payment portal...')" class ="payment-button">Continue to payment</button></div>
-
-         </aside>
-
-         <section>
-            <div class="bottom-section">
-                <div class="bottom-menu">
-                    <a class="nav-btn" href="index.html">
-                        <div class="nav-btn-text">Home</div>
-                    </a>
-                    <a class="nav-btn" href="attractions_events.html">
-                        <div class="nav-btn-text">Attractions & Events</div>
-                    </a>
-                    <a class="nav-btn" href="park_info.html">
-                        <div class="nav-btn-text">Park Information</div>
-                    </a>
-                </div>
-                <div class="bottom-brand-logo">
-                    <h3>THEME PARK</h3>
-                </div>
-            </div>
-            <hr />
-            <div class="social-media-box">
-                <a href="#" class="social-media-icon">
-                    <span class="fa fa-facebook"></span>
+    <head>
+        <!-- Head section containing the title, description and meta information of the home page -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+        <meta name="keywords" content="theme park,amusement park,attractions,leisure,recreation" />
+        <meta name="author" content="web-development-group18" />
+        <title>Attractions & Events – Theme Park</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="manifest" href="assets/site.webmanifest" />
+        <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="theme-color" content="#653780" />
+        <meta name="apple-mobile-web-app-title" content="Theme Park" />
+        <meta name="application-name" content="Theme Park" />
+        <!-- SEO tags -->
+        <meta name="description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+        <meta property="og:title" content="Theme Park" />
+        <meta property="og:description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+        <meta property="og:type" content="website" />
+        <!-- We don't know the absolute URL before uploading -->
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:image" content="https://example.com/assets/og-image.jpg" />
+        <meta name="twitter:title" content="Theme Park" />
+        <meta name="twitter:description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://example.com/assets/og-image.jpg" />
+        <!-- Icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- Global styles -->
+        <link rel="stylesheet" href="css/global.css" />
+        <!-- Local styles -->
+        <link rel="stylesheet" href="css/attractions_events.css" />
+    </head>
+    <body>
+        <header>
+            <h2 class="brand-logo">THEME PARK</h2>
+            <div class="nav-menu">
+                <a class="nav-btn" href="index.html">
+                    <div class="nav-btn-text">Home</div>
                 </a>
-                <a href="#" class="social-media-icon">
-                    <span class="fa fa-twitter"></span>
+                <a class="nav-btn" href="attractions_events.html">
+                    <div class="nav-btn-text">Attractions & Events</div>
                 </a>
-                <a href="#" class="social-media-icon">
-                    <span class="fa fa-instagram"></span>
-                </a>
-                <a href="#" class="social-media-icon">
-                    <span class="fa fa-youtube-play"></span>
+                <a class="nav-btn" href="park_info.html">
+                    <div class="nav-btn-text">Park Information</div>
                 </a>
             </div>
-        </section>
+            <div class="bookings-indicator">
+                <span class="bookings-text">Bookings (5)</span>
+            </div>
+        </header>
 
-    </main>
+        <main>
+            <!-- Main content section content -->
 
-    <footer>
-        <!-- footer content here-->
-        <div class="footer-content">2010 - 2020 Privacy - Terms</div>
-        <!-- back to top shortcut button here-->
-        <div class="back-to-top-btn">
-            <a href="#">
-                <span>Back to Top</span>
-            </a>
-        </div>
-    </footer>
+            <!-- Top section -->
+            <section>
+                <br />
+                <h1 id="title">Attractions & Events</h1>
+                <div class="Filter-buttons">
+                    <p>Events - <time datetime="2024-05-21T09:00+01:00">21 May 2024</time>.</p>
+                    <button class="filterSet">Default</button>
+                    <button class="filterSet">A-Z</button>
+                    <button class="filterSet">List View</button>
+                </div>
+            </section>
 
-    <!-- Add JavaScript file links or additional scripts here -->
-</body>
+            <!-- Attractions section -->
+            <section>
+                <h2>Attractions</h2>
+                <div class="attractions-container">
+                    <div class="attractions-box">
+                        <div class="attraction-image-container"><img src="assets/attractions_events_assets/roller_coaster.jpeg" alt="Attraction Image" width="320" height="227" class="attractions-img" /></div>
+                        <div class="attractions-text">
+                            <h3>Attraction 1</h3>
+                            <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                            <a href="#">
+                                <div class="attractions-details">Ride Description...</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="attractions-box">
+                        <div class="attraction-image-container"><img src="assets/attractions_events_assets/carousel.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img" /></div>
+                        <div class="attractions-text">
+                            <h3>Attraction 2</h3>
+                            <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                            <a href="#">
+                                <div class="attractions-details">Ride Description...</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="attractions-box">
+                        <div class="attraction-image-container"><img src="assets/attractions_events_assets/water_ride.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img" /></div>
+                        <div class="attractions-text">
+                            <h3>Attraction 3</h3>
+                            <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                            <a href="#">
+                                <div class="attractions-details">Ride Description...</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="attractions-box">
+                        <div class="attraction-image-container"><img src="assets/attractions_events_assets/360.jpeg" alt="Attraction Image" width="320" height="227" class="attractions-img" /></div>
+                        <div class="attractions-text">
+                            <h3>Attraction 4</h3>
+                            <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                            <a href="#">
+                                <div class="attractions-details">Ride Description...</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="attractions-box">
+                        <div class="attraction-image-container"><img src="assets/attractions_events_assets/catterpiller_ride.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img" /></div>
+                        <div class="attractions-text">
+                            <h3>Attraction 5</h3>
+                            <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                            <a href="#">
+                                <div class="attractions-details">Ride Description...</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="attractions-box">
+                        <div class="attraction-image-container"><img src="assets/attractions_events_assets/Twirl.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img" /></div>
+                        <div class="attractions-text">
+                            <h3>Attraction 6</h3>
+                            <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                            <a href="#">
+                                <div class="attractions-details">Ride Description...</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="live-events-title">Live Events</h2>
+                <div class="live-events-container">
+                    <div class="live-events-box">
+                        <img src="assets/attractions_events_assets/event.jpg" alt="Live Event Image" class="liveEventImg" />
+
+                        <div class="event-details">
+                            <h3>Event 1</h3>
+                            <br />
+                            <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                            <br />
+                            <a href="#">
+                                <div>Events Description...</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="live-events-box">
+                        <img src="assets/attractions_events_assets/Event_2.jpeg" alt="Live Event Image" class="liveEventImg" />
+
+                        <div class="event-details">
+                            <h3>Event 2</h3>
+                            <br />
+                            <time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time>
+                            <br />
+                            <a href="#">
+                                <div>Events Description...</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="current-booking-sticky-box">
+                <h3 class="current-booking-title">Current Booking Summary</h3>
+                <div id="booking-slip">
+                    <table>
+                        <tr>
+                            <td>Number of Adults x 2</td>
+                            <td>$30.12</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Children x 3</td>
+                            <td>$30.44</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$60.56</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>$2.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Total</b>
+                            </td>
+                            <td>
+                                <b>$62.56</b>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div><button type="button" onclick="alert('Proceeding to payment portal...')" class="payment-button">Continue to payment</button></div>
+            </aside>
+
+            <section>
+                <div class="bottom-section">
+                    <div class="bottom-menu">
+                        <a class="nav-btn" href="index.html">
+                            <div class="nav-btn-text">Home</div>
+                        </a>
+                        <a class="nav-btn" href="attractions_events.html">
+                            <div class="nav-btn-text">Attractions & Events</div>
+                        </a>
+                        <a class="nav-btn" href="park_info.html">
+                            <div class="nav-btn-text">Park Information</div>
+                        </a>
+                    </div>
+                    <div class="bottom-brand-logo">
+                        <h3>THEME PARK</h3>
+                    </div>
+                </div>
+                <hr />
+                <div class="social-media-box">
+                    <a href="#" class="social-media-icon">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a href="#" class="social-media-icon">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a href="#" class="social-media-icon">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                    <a href="#" class="social-media-icon">
+                        <span class="fa fa-youtube-play"></span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- footer content here-->
+            <div class="footer-content">2010 - 2020 Privacy - Terms</div>
+            <!-- back to top shortcut button here-->
+            <div class="back-to-top-btn">
+                <a href="#">
+                    <span>Back to Top</span>
+                </a>
+            </div>
+        </footer>
+
+        <!-- Add JavaScript file links or additional scripts here -->
+    </body>
 </html>
