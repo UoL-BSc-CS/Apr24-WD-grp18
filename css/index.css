@@ -101,80 +101,123 @@ h1 {
     color: #F89F5B;
 }
 
-/* styling of media-review-container contained in media section*/
+/* styling of media-review-container contained in media section and visitor-comment-container contained in visitors' comments section */
 
-.media-review-container {
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.quotes-container {
     position: relative;
-    width: 50%;
-    height: 0;
-    padding-bottom: 5%;
-    background: #4c4c4c;
-    border-radius: 10px 25px 10px 25px;
+    width: 60%;
 }
 
-.review-block {
+.quotes-block {
     position: absolute;
+    display: flex;
+    align-items: center;
+	gap: 16px;
+    inset: 0;
+    z-index: -1;
+}
+
+.quotes-block > figure {
     width: 100%;
     height: 100%; 
-    padding-top: 10px;
+    padding: 10px;
     background: #E53F71;
     border-radius: 10px 25px 10px 25px;
     text-align: center; 
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    z-index: -1;
+    order: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.review-block p {
-    color:#3F1651;
+.quotes-block > figure blockquote {
+    font-size: 19px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-#r1, #r2, #r3 {
-    display: none;
-}
-
-.review-block label {
-    width: 12%;
-    height: 100%;
-    padding: 0;
+.quotes-block > figure blockquote::before {
+    content: open-quote;
     position: absolute;
-    top: 10%;
-    background:#653780;
+    font-size: 48px;
+    top: 0;
+    left: 8px;
+    color: #F89F5B;
+}
+
+.quotes-block > figure blockquote::after {
+    content: close-quote;
+    position: absolute;
+    font-size: 48px;
+    /* top or bottom: 0; depends on the length of the content and is unique to the section */
+    right: 8px;
+    color: #F89F5B;
+}
+
+.quotes-block > figure figurecaption {
+    color:#3F1651;
+    font-size: 16px;
+}
+
+.quotes-block label {
     color: #3F1651;
     z-index: 99;
     cursor: pointer;
+    text-shadow: 0 0 12px #E53F71;
 }
 
-.fa.fa-arrow-circle-left {
-    left: -90px;
-    font-size: 60px;
-}
-.fa.fa-arrow-circle-right {
-    right: -90px;
-    font-size: 60px;
-}
-
-.review-block-status {
+.quotes-block-status {
     width: 100%;
-    height: 11px;
-    bottom: -50%;
+    bottom: -40px;
     position: absolute;
     text-align: center;
     z-index: 99;
 }
 
-.review-block-status .dots {
-    top: -5px;
+.quotes-block-status .dots {
     width: 18px;
     height: 18px;
-    margin: 0, 4px;
+    margin: 0 2px;
     position: relative;
     border-radius: 50%;
     display: inline-block;
     background: #3F1651;
     opacity: 0.6;
+    cursor: pointer;
+}
+
+.quotes-block label:hover,
+.quotes-block-status .dots:hover {
+    opacity: 0.8;
+    transition: opacity 150ms;
+}
+
+.fa.fa-arrow-circle-left {
+    font-size: 60px;
+    order: -1;
+}
+.fa.fa-arrow-circle-right {
+    font-size: 60px;
+    order: 1;
+}
+
+/* styling unique to media-review-container */
+
+.media-review-container {
+    margin: 50px auto;
+    padding-bottom: 6%;
+}
+
+.review-block > figure blockquote::after {
+    top: 0;
+}
+
+#r1, #r2, #r3 {
+    display: none;
 }
 
 #r1:checked ~ #rb1,
@@ -245,80 +288,23 @@ h2 {
     padding-right: 30px;
 }
 
-/* styling of visitor-comment-container contained in visitos' comments section */
+/* styling unique to visitor-comment-container */
 
 .visitor-comment-container {
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    position: relative;
-    width: 50%;
-    height: 0;
-    padding-bottom: 8%;
-    background: #4c4c4c;
-    border-radius: 10px 25px 10px 25px;
+    margin: 50px auto 100px;
+    padding-bottom: 10%;
 }
 
-.comment-block {
-    position: absolute;
-    width: 100%;
-    height: 100%; 
-    padding-top: 10px;
-    background: #E53F71;
-    border-radius: 10px 25px 10px 25px;
-    text-align: center; 
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    z-index: -1;
+.comment-block > figure blockquote {
+    quotes: "“" "„";
 }
 
-.comment-block p {
-    color:#3F1651;
+.comment-block > figure blockquote::after {
+    bottom: 0;
 }
 
 #rr1, #rr2, #rr3 {
     display: none;
-}
-
-.comment-block label {
-    width: 12%;
-    height: 100%;
-    padding: 0;
-    position: absolute;
-    top: 10%;
-    background:#653780;
-    color: #3F1651;
-    z-index: 99;
-    cursor: pointer;
-}
-
-.fa.fa-arrow-circle-left {
-    left: -90px;
-    font-size: 60px;
-}
-.fa.fa-arrow-circle-right {
-    right: -90px;
-    font-size: 60px;
-}
-
-.comment-block-status {
-    width: 100%;
-    height: 11px;
-    bottom: -30%;
-    position: absolute;
-    text-align: center;
-    z-index: 99;
-}
-
-.comment-block-status .dots {
-    top: -5px;
-    width: 18px;
-    height: 18px;
-    margin: 0, 4px;
-    position: relative;
-    border-radius: 50%;
-    display: inline-block;
-    background: #3F1651;
-    opacity: 0.6;
 }
 
 #rr1:checked ~ #c1,
