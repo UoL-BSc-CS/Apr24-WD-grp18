@@ -1,55 +1,55 @@
 /* Common style */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    width: 100%;
-    min-width: min-content;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-width: min-content;
+    margin: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 header {
-    min-width: 200px;
-    max-height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #9c3587;
     position: sticky;
     top: 0;
-    width: inherit;
-    max-width: inherit;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    min-width: 200px;
+    max-width: inherit;
+    max-height: 150px;
+    background-color: #9c3587;
 }
 
 header h2 {
     flex: 40%;
-    margin-left: 60px;
+    min-width: max-content;
     margin-right: 20px;
+    margin-left: 60px;
     font-size: 50px;
     color: #f89f5b;
-    min-width: max-content;
 }
 
 header .nav-menu {
-    flex: 50%;
     display: flex;
-    justify-content: space-around;
+    flex: 50%;
     align-items: center;
+    justify-content: space-around;
     color: #e53f71;
 }
 
 header .nav-btn {
+    min-height: 100%;
+    padding: 60px 10px;
     font-size: 25px;
     text-decoration: none;
-    padding: 60px 10px;
-    min-height: 100%;
 }
 
 header .nav-btn .nav-btn-text {
@@ -64,40 +64,40 @@ header .nav-btn .nav-btn-text {
 
 /* Change colour on hover the nav-btn */
 .nav-btn:hover {
-    background-color: #653780;
     color: #e53f71;
+    background-color: #653780;
 }
 
 .bookings-indicator {
     flex: 10%;
-    margin-left: 20px;
-    margin-right: 40px;
-    background-color: #3f1651;
-    color: #e53f71;
-    padding: 25px;
-    border-radius: 15px 30px;
-    font-size: 25px;
-    text-align: center;
     min-width: fit-content;
+    padding: 25px;
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #e53f71;
+    text-align: center;
+    background-color: #3f1651;
+    border-radius: 15px 30px;
 }
 
 main {
-    background-color: #653780;
     color: #fbbede;
+    background-color: #653780;
 }
 
 footer {
-    background-color: #9c3587;
-    height: 20px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    height: 20px;
+    padding: 20px;
+    background-color: #9c3587;
 }
 
 footer .footer-content {
-    color: #e53f71;
-    font-size: 12px;
     align-items: center;
+    font-size: 12px;
+    color: #e53f71;
     text-align: center;
 }
 
@@ -116,13 +116,13 @@ footer .footer-content {
 /* Styling of bottom section */
 .bottom-section {
     display: flex;
-    width: 1200px;
     align-items: flex-start;
+    width: 1200px;
 }
 
 .bottom-menu {
-    flex: 42%;
     display: flex;
+    flex: 42%;
 }
 
 .bottom-menu a {
@@ -144,25 +144,25 @@ hr {
 }
 
 .social-media-box {
-    width: 30%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    width: 30%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .social-media-icon {
-    background: #3f1651;
-    min-width: 50px;
-    height: 50px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 50px;
+    height: 50px;
+    font-size: 24px;
     color: #e53f71;
     text-decoration: none;
-    font-size: 24px;
+    background: #3f1651;
+    border-radius: 50%;
 }
 
 .social-media-icon:hover {
@@ -177,8 +177,8 @@ hr {
     }
 
     header .nav-menu {
-        flex: 70%;
         display: flex;
+        flex: 70%;
         flex-direction: column;
     }
 

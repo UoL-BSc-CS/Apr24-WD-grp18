@@ -1,49 +1,49 @@
 section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin: 0 70px 70px;
 }
 
 #title {
     width: 1000px;
-    text-align: center;
     font-size: 40px;
+    text-align: center;
 }
 
 .filter-set {
-    background-color: #3f1651;
-    color: #e53f71;
     justify-content: space-evenly;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
     width: 200px;
     padding: 10px;
+    font-size: 18px;
+    color: #e53f71;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3f1651;
     border-radius: 20px;
 }
 
 .attractions-container {
     position: relative;
-    justify-content: space-evenly;
-    margin: 0 80px 80px;
-    width: 1000px;
-    padding: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    width: 1000px;
+    padding: 10px;
+    margin: 0 80px 80px;
 }
 
 .attractions-box {
     position: relative;
-    border-radius: 10px;
-    width: 320px;
-    height: 360px;
     display: inline-flex;
     flex-direction: column;
+    width: 320px;
+    height: 360px;
     margin: 10px;
     margin-bottom: 30px;
     background-color: #3f1651;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -61,27 +61,27 @@ section {
 }
 
 .live-events-container {
-    margin-top: 20px;
     display: grid;
     align-items: flex-start;
+    margin-top: 20px;
     text-align: left;
 }
 
 .live-events-box {
-    border-radius: 10px;
     display: flex;
     width: 900px;
     height: 250px;
     margin-bottom: 30px;
     background-color: #3f1651;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .live-event-img {
-    width: 400px;
-    height: 250px;
     display: inline;
     align-content: space-around;
+    width: 400px;
+    height: 250px;
     border-radius: 10px 0 0 10px;
 }
 
@@ -96,18 +96,18 @@ section {
 }
 
 .current-booking-sticky-box {
-    height: 180px;
-    width: 600px;
     position: sticky;
     left: 1000px;
-    margin: 10px;
-    border-radius: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #3f1651;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-    padding: 20px;
     align-content: center;
+    width: 600px;
+    height: 180px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #3f1651;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .current-booking-title {
@@ -123,14 +123,14 @@ table {
 }
 
 .payment-button {
-    background-color: #f89f5b;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-left: 20px;
-    cursor: pointer;
     align-self: center;
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #f89f5b;
+    border: none;
+    border-radius: 5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 

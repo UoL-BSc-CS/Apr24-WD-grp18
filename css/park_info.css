@@ -3,39 +3,39 @@ main {
 }
 
 section {
+    z-index: 90;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    z-index: 90;
+    justify-content: center;
 }
 
 /* Section 1 - Title section */
 #title {
     width: 1000px;
-    text-align: center;
     padding: 20px;
     font-size: 40px;
+    text-align: center;
 }
 
 .park-image-container {
-    width: 1000px;
     position: relative;
-    margin: 0 40px 40px;
+    width: 1000px;
     padding: 0;
+    margin: 0 40px 40px;
 }
 
 .park-image {
-    border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 /* Section 2 - About Us section */
 .about-us {
-    text-align: justify;
     margin: auto 80px 80px;
+    text-align: justify;
 }
 
 .about-us-title {
@@ -50,45 +50,45 @@ section {
 
 /* Section 3 - Testimonial section */
 .testimonials-title {
-    text-align: center;
     margin: auto 40px 20px;
+    text-align: center;
 }
 
 .testimonials-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: auto 40px 80px;
 }
 
 .testimonial {
-    border-radius: 10px;
-    width: 300px;
-    min-width: 250px;
-    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 300px;
+    min-width: 250px;
+    padding: 20px;
     margin: 20px;
     background-color: #3f1651;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .testimonial-text {
+    height: 45px;
+    margin-bottom: 10px;
+    font-style: italic;
     text-align: center;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    margin-bottom: 10px;
-    height: 45px;
-    font-style: italic;
 }
 
 .testimonial-user {
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
 }
 
 .testimonial-text q {
@@ -106,9 +106,9 @@ section {
 }
 
 .see-more-btn {
-    text-decoration: none;
-    text-align: end;
     color: #f89f5b;
+    text-align: end;
+    text-decoration: none;
 }
 
 .see-more-btn:hover {
@@ -117,36 +117,36 @@ section {
 
 /* Section 4 - Ticket Prices and Packages section */
 .ticket-title {
-    text-align: left;
-    margin: auto 80px 20px;
     width: calc(100% - 160px);
+    margin: auto 80px 20px;
+    text-align: left;
 }
 
 #ticket-options {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin: auto 40px 80px;
     align-items: stretch;
+    justify-content: space-around;
+    margin: auto 40px 80px;
 }
 
 .ticket-option {
-    padding: 20px;
-    border-radius: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
     width: 30%;
     min-width: 250px;
-    box-sizing: border-box;
-    text-align: center;
-    justify-content: space-between;
     min-height: 200px;
+    padding: 20px;
     margin-bottom: 20px;
+    text-align: center;
     background-color: #3f1651;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .price {
-    font-size: 2em;
     margin-bottom: 10px;
+    font-size: 2em;
 }
 
 .price span {
@@ -154,14 +154,14 @@ section {
 }
 
 .select-button {
-    background-color: #f89f5b;
-    color: #fff;
-    border: none;
+    align-self: center;
     padding: 10px 20px;
     margin-top: 20px;
-    border-radius: 5px;
+    color: #fff;
     cursor: pointer;
-    align-self: center;
+    background-color: #f89f5b;
+    border: none;
+    border-radius: 5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -170,19 +170,19 @@ section {
 }
 
 .ticket-option ul {
-    height: 120px;
-    list-style: disc;
-    padding-left: 40px;
-    text-align: left;
     flex-grow: 1;
+    height: 120px;
+    padding-left: 40px;
     margin-bottom: 20px;
+    text-align: left;
+    list-style: disc;
 }
 
 /* Section 5 - Park Facilities section */
 #park-facilities {
-    text-align: left;
-    margin: 20px 80px;
     width: calc(100% - 160px);
+    margin: 20px 80px;
+    text-align: left;
 }
 
 .facility-container {
@@ -193,16 +193,16 @@ section {
 }
 
 .facility-container a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 .facility-section {
-    border-radius: 10px;
     display: flex;
     width: 100%;
     margin-bottom: 20px;
     background-color: #3f1651;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -211,15 +211,15 @@ section {
 }
 
 .facility-text {
-    flex: 1;
-    margin-right: 20px;
-    padding: 20px;
     position: relative;
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
 }
 
 .facility-text h3 {
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .facility-text p {
@@ -233,23 +233,23 @@ section {
 
 .explore-more {
     position: absolute;
-    left: 20px;
     bottom: 0;
+    left: 20px;
     color: #f89f5b;
 }
 
 .facility-image {
+    order: 2;
     width: 500px;
     height: auto;
-    order: 2;
     border-radius: 0 10px 10px 0;
 }
 
 /* Section 6 - Having a Safe Visit section */
 .safety-title {
-    text-align: left;
-    margin: 20px 80px;
     width: calc(100% - 160px);
+    margin: 20px 80px;
+    text-align: left;
 }
 
 .safety-container {
@@ -261,28 +261,28 @@ section {
 }
 
 .safety-text ul li {
-    list-style: disc;
     margin-bottom: 5px;
+    list-style: disc;
 }
 
 /* Section 7 - Map and Working hours section */
 .map-working-hours-container {
     display: flex;
-    margin: 40px;
     width: calc(100% - 160px);
+    margin: 40px;
 }
 
 .map-container {
-    flex: 1;
     position: relative;
+    flex: 1;
     width: 50%;
     margin: 0 auto;
 }
 
 .park-map {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
@@ -292,25 +292,25 @@ section {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #f89f5b;
-    color: #fff;
-    border: none;
     padding: 10px 20px;
+    color: #fff;
+    background-color: #f89f5b;
+    border: none;
     border-radius: 5px;
 }
 
 .download-map:hover {
-    opacity: 0.6;
     cursor: pointer;
+    opacity: 0.6;
 }
 
 .working-hours {
-    margin-left: 40px;
     width: 50%;
-    background-color: #3f1651;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
     padding: 20px;
+    margin-left: 40px;
+    background-color: #3f1651;
     border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .working-hours table {
