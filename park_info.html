@@ -38,6 +38,7 @@
     </head>
     <body>
         <header>
+            <!-- Header of the Home Page containing the Theme Park brand logo, nav menu and bookings indicator -->
             <h2 class="brand-logo">THEME PARK</h2>
             <div class="nav-menu">
                 <a class="nav-btn" href="index.html">
@@ -56,9 +57,9 @@
         </header>
 
         <main>
-            <!-- body content containing 8 main sections here -->
+            <!-- Main content containing 8 sections -->
 
-            <!-- Section 1- Title section  -->
+            <!-- Section 1 - Title  -->
             <section>
                 <h1 id="title">PARK Information</h1>
                 <div class="park-image-container">
@@ -66,7 +67,7 @@
                 </div>
             </section>
 
-            <!-- Section 2 - About Us section  -->
+            <!-- Section 2 - About Us  -->
             <section>
                 <div class="about-us">
                     <h2 class="about-us-title">About Us</h2>
@@ -74,7 +75,7 @@
                 </div>
             </section>
 
-            <!-- Section 3 - Testimonial section -->
+            <!-- Section 3 - Testimonial -->
             <section>
                 <h2 class="testimonials-title">What our other clients have said about us</h2>
                 <div class="testimonials-container">
@@ -125,7 +126,7 @@
                 </div>
             </section>
 
-            <!-- Section 4 - Ticket Prices and Packages section -->
+            <!-- Section 4 - Ticket Prices and Packages -->
             <section>
                 <h2 class="ticket-title">Ticket Prices and Packages</h2>
                 <div id="ticket-options">
@@ -138,7 +139,7 @@
                             <li>20% discount for kids &lt; 12</li>
                             <li>Free admission for kids &lt; 3</li>
                         </ul>
-                        <button class="select-button">Select</button>
+                        <button type="button" class="select-button">Select</button>
                     </div>
 
                     <!-- Two-Day Access Ticket Option -->
@@ -150,7 +151,7 @@
                             <li>20% discount for kids &lt; 12</li>
                             <li>Free admission for kids &lt; 3</li>
                         </ul>
-                        <button class="select-button">Select</button>
+                        <button type="button" class="select-button">Select</button>
                     </div>
 
                     <!-- Season Pass Ticket Option -->
@@ -161,12 +162,12 @@
                             <li>Unlimited access to all attractions and events for full season</li>
                             <li>Additional discounts with the special members card</li>
                         </ul>
-                        <button class="select-button">Select</button>
+                        <button type="button" class="select-button">Select</button>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 5 - Park Facilities section -->
+            <!-- Section 5 - Park Facilities -->
             <section>
                 <h2 id="park-facilities">Park Facilities</h2>
 
@@ -211,7 +212,7 @@
                 </div>
             </section>
 
-            <!-- Section 6 - Having a Safe Visit section -->
+            <!-- Section 6 - Having a Safe Visit -->
             <section>
                 <h2 class="safety-title">Having a Safe Visit</h2>
                 <div class="safety-container">
@@ -226,13 +227,13 @@
                 </div>
             </section>
 
-            <!-- Section 7 - Map and Working hours section -->
+            <!-- Section 7 - Map and Working hours -->
             <section>
                 <div class="map-working-hours-container">
                     <!-- Map -->
                     <div class="map-container">
                         <img src="assets/park_info_assets/map.jpg" alt="Park Map" class="park-map" />
-                        <button class="download-map">Download Map</button>
+                        <button type="button" class="download-map">Download Map</button>
                     </div>
 
                     <!-- Working Hours -->
@@ -241,38 +242,38 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Day</th>
-                                    <th>Hours</th>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Hours</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Monday</td>
-                                    <td>09:00 - 19:00</td>
+                                    <td scope="row">Monday</td>
+                                    <td><time>09:00</time> – <time>19:00</time></td>
                                 </tr>
                                 <tr>
-                                    <td>Tuesday</td>
-                                    <td>09:00 - 19:00</td>
+                                    <td scope="row">Tuesday</td>
+                                    <td><time>09:00</time> – <time>19:00</time></td>
                                 </tr>
                                 <tr>
-                                    <td>Wednesday</td>
-                                    <td>09:00 - 19:00</td>
+                                    <td scope="row">Wednesday</td>
+                                    <td><time>09:00</time> – <time>19:00</time></td>
                                 </tr>
                                 <tr>
-                                    <td>Thursday</td>
-                                    <td>09:00 - 19:00</td>
+                                    <td scope="row">Thursday</td>
+                                    <td><time>09:00</time> – <time>19:00</time></td>
                                 </tr>
                                 <tr>
-                                    <td>Friday</td>
-                                    <td>09:00 - 22:00</td>
+                                    <td scope="row">Friday</td>
+                                    <td><time>09:00</time> – <time>22:00</time></td>
                                 </tr>
                                 <tr>
-                                    <td>Saturday</td>
-                                    <td>09:00 - 22:00</td>
+                                    <td scope="row">Saturday</td>
+                                    <td><time>09:00</time> – <time>22:00</time></td>
                                 </tr>
                                 <tr>
-                                    <td>Sunday</td>
-                                    <td>09:00 - 19:00</td>
+                                    <td scope="row">Sunday</td>
+                                    <td><time>09:00</time> – <time>19:00</time></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -317,9 +318,9 @@
         </main>
 
         <footer>
-            <!-- footer content here-->
-            <div class="footer-content">2010 - 2020 Privacy - Terms</div>
-            <!-- back to top shortcut button here-->
+            <!-- Footer content -->
+            <div class="footer-content">Copyleft © 2010 – 2020 Theme Park. No right reserved.</div>
+            <!-- Back to top shortcut button -->
             <div class="back-to-top-btn">
                 <a href="#">
                     <span>Back to Top</span>
@@ -327,6 +328,6 @@
             </div>
         </footer>
 
-        <!-- JavaScript file links or additional scripts (if any) to be inserted here -->
+        <!-- JavaScript file links or additional scripts -->
     </body>
 </html>

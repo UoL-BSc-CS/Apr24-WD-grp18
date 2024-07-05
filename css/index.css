@@ -1,4 +1,4 @@
-/* display settings apply to all sections */
+/* Display settings apply to all sections */
 section {
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@ section {
     z-index: 90;
 }
 
-/* styling of brand logo contained in top section */
+/* Styling of brand logo contained in top section */
 h1 {
     font-size: 130px;
     text-align: center;
@@ -15,7 +15,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-/* styling of slideshow container in top section*/
+/* Styling of slideshow container in top section */
 .slideshow-container {
     width: 1000px;
     position: relative;
@@ -35,12 +35,15 @@ h1 {
     0% {
         transform: translateX(0);
     }
+
     33% {
         transform: translateX(-100%);
     }
+
     66% {
         transform: translateX(-200%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -100,8 +103,7 @@ h1 {
     color: #f89f5b;
 }
 
-/* styling of media-review-container contained in media section and visitor-comment-container contained in visitors' comments section */
-
+/* Styling of media-review-container contained in media section and visitor-comment-container contained in visitors' comments section */
 .quotes-container {
     position: relative;
     width: 60%;
@@ -121,7 +123,7 @@ h1 {
     height: 100%;
     padding: 10px;
     background: #e53f71;
-    border-radius: 10px 25px 10px 25px;
+    border-radius: 10px 25px;
     text-align: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
     order: 1;
@@ -157,7 +159,7 @@ h1 {
     color: #f89f5b;
 }
 
-.quotes-block > figure figurecaption {
+.quotes-block > figure figcaption {
     color: #3f1651;
     font-size: 16px;
 }
@@ -199,13 +201,13 @@ h1 {
     font-size: 60px;
     order: -1;
 }
+
 .fa.fa-arrow-circle-right {
     font-size: 60px;
     order: 1;
 }
 
-/* styling unique to media-review-container */
-
+/* Styling unique to media-review-container */
 .media-review-container {
     margin: 50px auto;
     padding-bottom: 6%;
@@ -233,8 +235,7 @@ h1 {
     background: #fff;
 }
 
-/* styling of section-popular-attractions-events contained in attractions & events section */
-
+/* Styling of section-popular-attractions-events contained in attractions & events section */
 h2 {
     font-size: 40px;
 }
@@ -254,7 +255,6 @@ h2 {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: top;
 }
 
 .attractions-events-box {
@@ -287,8 +287,7 @@ h2 {
     padding-right: 30px;
 }
 
-/* styling unique to visitor-comment-container */
-
+/* Styling unique to visitor-comment-container */
 .visitor-comment-container {
     margin: 50px auto 100px;
     padding-bottom: 10%;

@@ -1,4 +1,4 @@
-/* common style */
+/* Common style */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,6 @@ body {
     flex-direction: column;
 }
 
-/* fixed the header */
 header {
     min-width: 200px;
     max-height: 150px;
@@ -52,20 +51,18 @@ header .nav-btn {
     padding: 60px 10px;
     min-height: 100%;
 }
+
 header .nav-btn .nav-btn-text {
     min-width: max-content;
 }
 
-/* change color on link of the nav-btn */
-.nav-btn:link {
-    color: #f89f5b;
-}
-
+/* Change colour on link of the nav-btn */
+.nav-btn:link,
 .nav-btn:visited {
     color: #f89f5b;
 }
 
-/* change color on hover the nav-btn */
+/* Change colour on hover the nav-btn */
 .nav-btn:hover {
     background-color: #653780;
     color: #e53f71;
@@ -78,7 +75,7 @@ header .nav-btn .nav-btn-text {
     background-color: #3f1651;
     color: #e53f71;
     padding: 25px;
-    border-radius: 15px 30px 15px 30px;
+    border-radius: 15px 30px;
     font-size: 25px;
     text-align: center;
     min-width: fit-content;
@@ -110,16 +107,13 @@ footer .footer-content {
     text-align: right;
 }
 
-/* change color on link of the back-to-top */
-.back-to-top-btn a:link {
-    color: #f89f5b;
-}
-
+/* Change colour on link of the back-to-top */
+.back-to-top-btn a:link,
 .back-to-top-btn a:visited {
     color: #f89f5b;
 }
 
-/* styling of bottom section */
+/* Styling of bottom section */
 .bottom-section {
     display: flex;
     width: 1200px;
@@ -176,18 +170,20 @@ hr {
     transition: opacity 150ms;
 }
 
-/* enable responsive layout - change to nav-btn row to single column */
+/* Enable responsive layout - Change to nav-btn row to single column */
 @media (max-width: 1000px) {
     header h2 {
         flex: 30%;
     }
+
     header .nav-menu {
         flex: 70%;
         display: flex;
         flex-direction: column;
     }
+
     header .nav-menu .nav-btn {
-        padding: 10px 10px;
+        padding: 10px;
     }
 
     .bookings-indicator {

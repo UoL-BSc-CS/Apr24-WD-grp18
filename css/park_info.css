@@ -10,7 +10,7 @@ section {
     z-index: 90;
 }
 
-/*  Section 1- Title section */
+/* Section 1 - Title section */
 #title {
     width: 1000px;
     text-align: center;
@@ -21,7 +21,7 @@ section {
 .park-image-container {
     width: 1000px;
     position: relative;
-    margin: 0 40px 40px 40px;
+    margin: 0 40px 40px;
     padding: 0;
 }
 
@@ -35,7 +35,7 @@ section {
 /* Section 2 - About Us section */
 .about-us {
     text-align: justify;
-    margin: auto 80px 80px 80px;
+    margin: auto 80px 80px;
 }
 
 .about-us-title {
@@ -51,14 +51,14 @@ section {
 /* Section 3 - Testimonial section */
 .testimonials-title {
     text-align: center;
-    margin: auto 40px 20px 40px;
+    margin: auto 40px 20px;
 }
 
 .testimonials-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: auto 40px 80px 40px;
+    margin: auto 40px 80px;
 }
 
 .testimonial {
@@ -118,7 +118,7 @@ section {
 /* Section 4 - Ticket Prices and Packages section */
 .ticket-title {
     text-align: left;
-    margin: auto 80px 20px 80px;
+    margin: auto 80px 20px;
     width: calc(100% - 160px);
 }
 
@@ -126,7 +126,7 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: auto 40px 80px 40px;
+    margin: auto 40px 80px;
     align-items: stretch;
 }
 
@@ -268,7 +268,7 @@ section {
 /* Section 7 - Map and Working hours section */
 .map-working-hours-container {
     display: flex;
-    margin: 40px 40px;
+    margin: 40px;
     width: calc(100% - 160px);
 }
 
@@ -316,7 +316,7 @@ section {
 .working-hours table {
     width: 100%;
     height: auto;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px;
     border-collapse: collapse;
 }
 
