@@ -190,6 +190,7 @@ section {
 #facility-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     justify-content: space-between;
     margin: 0 80px;
 }
@@ -202,7 +203,6 @@ section {
 .facility-section {
     display: flex;
     width: 100%;
-    margin-bottom: 20px;
     background-color: var(--theme-6);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -309,7 +309,7 @@ section {
 }
 
 #download-map:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 #working-hours {

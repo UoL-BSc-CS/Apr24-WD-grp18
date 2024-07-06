@@ -54,7 +54,7 @@ h1 {
     }
 }
 
-#slideshow-container #slides img {
+#slides img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -71,8 +71,9 @@ h1 {
     height: 100%;
     font-size: 30px;
     text-align: center;
+    user-select: none;
     background: var(--opaque);
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     opacity: 0;
     transition: 600ms;
 }
@@ -92,7 +93,7 @@ h1 {
     text-align: center;
 }
 
-#buy-tickets-container #buy-tickets-btn {
+#buy-tickets-btn {
     width: 100%;
     padding: 10px;
     font-size: 20px;
@@ -253,6 +254,8 @@ h2 {
 }
 
 #section-popular-attractions-events p {
+    padding: 8px;
+    font-size: 20px;
     color: var(--theme-1);
 }
 
@@ -264,8 +267,8 @@ h2 {
 }
 
 .attractions-events-box {
-    display: block;
-    height: 280px;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     background: var(--theme-6);
     border-radius: 10px;
@@ -278,19 +281,20 @@ h2 {
     border-radius: 10px 10px 0 0;
 }
 
+.attractions-events-text {
+    padding: 15px 30px 5px;
+    font-size: 18px;
+}
+
 .see-more-btn {
-    padding: 30px;
+    align-self: flex-end;
+    padding: 20px 30px;
     color: var(--theme-2);
-    text-align: end;
     text-decoration: none;
 }
 
 .see-more-btn:hover {
     opacity: 0.6;
-}
-
-.see-more-text {
-    padding-right: 30px;
 }
 
 /* Styling unique to visitor-comment-container */

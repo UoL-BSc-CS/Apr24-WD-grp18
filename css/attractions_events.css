@@ -80,6 +80,10 @@ section {
     text-decoration: none;
 }
 
+.attractions-details:hover {
+    opacity: 0.6;
+}
+
 #live-events-container {
     display: grid;
     gap: 30px;
@@ -97,7 +101,7 @@ section {
     box-shadow: var(--box-shadow);
 }
 
-.live-event-img {
+.live-events-img {
     display: inline;
     align-content: space-around;
     width: 400px;
@@ -105,14 +109,18 @@ section {
     border-radius: 10px 0 0 10px;
 }
 
-.event-details {
+.live-events-text {
     width: 450px;
     padding: 20px;
 }
 
-.event-details a {
+.live-events-text a {
     color: var(--theme-2);
     text-decoration: none;
+}
+
+.live-events-details:hover {
+    opacity: 0.6;
 }
 
 #current-booking-sticky-box {
