@@ -10,6 +10,7 @@
         "alpha-value-notation": "number",
         "color-function-notation": "legacy",
         "font-weight-notation": "named-where-possible",
-        "media-feature-range-notation": "prefix"
+        "media-feature-range-notation": "prefix",
+        "property-disallowed-list": ["background"]
     }
 }

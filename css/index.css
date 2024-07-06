@@ -72,7 +72,7 @@ h1 {
     font-size: 30px;
     text-align: center;
     user-select: none;
-    background: var(--opaque);
+    background-color: var(--opaque);
     border-radius: 10px;
     opacity: 0;
     transition: 600ms;
@@ -133,7 +133,7 @@ h1 {
     height: 100%;
     padding: 10px;
     text-align: center;
-    background: var(--theme-3);
+    background-color: var(--theme-3);
     border-radius: 10px 25px;
     box-shadow: var(--box-shadow);
 }
@@ -193,7 +193,7 @@ h1 {
     height: 18px;
     margin: 0 2px;
     cursor: pointer;
-    background: var(--theme-6);
+    background-color: var(--theme-6);
     border-radius: 50%;
     opacity: 0.6;
     transition: opacity 150ms, background 300ms;
@@ -239,7 +239,7 @@ h1 {
 #r1:checked ~ #review-block-status #dot1,
 #r2:checked ~ #review-block-status #dot2,
 #r3:checked ~ #review-block-status #dot3 {
-    background: white;
+    background-color: white;
 }
 
 /* Styling of section-popular-attractions-events contained in attractions & events section */
@@ -269,7 +269,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 0;
-    background: var(--theme-6);
+    background-color: var(--theme-6);
     border-radius: 10px;
 }
 
@@ -325,5 +325,5 @@ h2 {
 #rr1:checked ~ #comment-block-status #d1,
 #rr2:checked ~ #comment-block-status #d2,
 #rr3:checked ~ #comment-block-status #d3 {
-    background: white;
+    background-color: white;
 }

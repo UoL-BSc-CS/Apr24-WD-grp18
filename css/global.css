@@ -195,7 +195,7 @@ hr {
     font-size: 24px;
     color: var(--theme-3);
     text-decoration: none;
-    background: var(--theme-6);
+    background-color: var(--theme-6);
     border-radius: 50%;
 }
 
