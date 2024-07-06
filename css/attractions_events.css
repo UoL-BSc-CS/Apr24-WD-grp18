@@ -1,15 +1,27 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 70px 70px;
+    margin: 0 80px;
 }
 
 #title {
     width: 1000px;
+    padding: 20px;
     font-size: 40px;
     text-align: center;
+}
+
+#events-time {
+    margin: 8px;
 }
 
 .filter-set {
@@ -20,14 +32,24 @@ section {
     color: var(--theme-3);
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
     background-color: var(--theme-6);
     border-radius: 20px;
+}
+
+.filter-set:hover {
+    opacity: 0.7;
+}
+
+#attractions-title {
+    margin: 80px 80px 0;
 }
 
 .attractions-container {
     position: relative;
     display: grid;
     grid-template-columns: auto auto auto;
+    gap: 30px 20px;
     justify-content: space-evenly;
     width: 1000px;
     padding: 10px;
@@ -40,11 +62,9 @@ section {
     flex-direction: column;
     width: 320px;
     height: 360px;
-    margin: 10px;
-    margin-bottom: 30px;
     background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .attractions-img {
@@ -62,6 +82,7 @@ section {
 
 .live-events-container {
     display: grid;
+    gap: 30px;
     align-items: flex-start;
     margin-top: 20px;
     text-align: left;
@@ -71,10 +92,9 @@ section {
     display: flex;
     width: 900px;
     height: 250px;
-    margin-bottom: 30px;
     background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .live-event-img {
@@ -97,17 +117,18 @@ section {
 
 .current-booking-sticky-box {
     position: sticky;
-    left: 1000px;
+    bottom: 0;
     display: grid;
     grid-template-columns: auto auto auto;
     align-content: center;
+    align-self: flex-end;
     width: 600px;
     height: 180px;
     padding: 20px;
-    margin: 10px;
+    margin: 30px 0;
     background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .current-booking-title {
@@ -126,14 +147,14 @@ table {
     align-self: center;
     padding: 10px 20px;
     margin-left: 20px;
-    color: #fff;
+    color: white;
     cursor: pointer;
     background-color: var(--theme-2);
     border: none;
     border-radius: 5px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .payment-button:hover {
-    opacity: 0.4;
+    opacity: 0.7;
 }

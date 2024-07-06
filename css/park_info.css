@@ -1,5 +1,9 @@
 main {
-    color: var(--theme-1);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
 }
 
 section {
@@ -22,7 +26,6 @@ section {
     position: relative;
     width: 1000px;
     padding: 0;
-    margin: 0 40px 40px;
 }
 
 .park-image {
@@ -34,7 +37,8 @@ section {
 
 /* Section 2 - About Us section */
 .about-us {
-    margin: auto 80px 80px;
+    margin: 0 120px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -50,7 +54,7 @@ section {
 
 /* Section 3 - Testimonial section */
 .testimonials-title {
-    margin: auto 40px 20px;
+    margin: 0 40px 20px;
     text-align: center;
 }
 
@@ -58,7 +62,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: auto 40px 80px;
+    margin: 0 40px;
 }
 
 .testimonial {
@@ -72,7 +76,7 @@ section {
     margin: 20px;
     background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .testimonial-text {
@@ -112,13 +116,12 @@ section {
 }
 
 .see-more-btn:hover {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 /* Section 4 - Ticket Prices and Packages section */
 .ticket-title {
-    width: calc(100% - 160px);
-    margin: auto 80px 20px;
+    margin: 0 80px 20px;
     text-align: left;
 }
 
@@ -127,7 +130,7 @@ section {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-around;
-    margin: auto 40px 80px;
+    margin: 0 40px;
 }
 
 .ticket-option {
@@ -141,7 +144,7 @@ section {
     text-align: center;
     background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .price {
@@ -157,16 +160,16 @@ section {
     align-self: center;
     padding: 10px 20px;
     margin-top: 20px;
-    color: #fff;
+    color: white;
     cursor: pointer;
     background-color: var(--theme-2);
     border: none;
     border-radius: 5px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .select-button:hover {
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
 .ticket-option ul {
@@ -180,7 +183,6 @@ section {
 
 /* Section 5 - Park Facilities section */
 #park-facilities {
-    width: calc(100% - 160px);
     margin: 20px 80px;
     text-align: left;
 }
@@ -189,7 +191,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: auto 80px;
+    margin: 0 80px;
 }
 
 .facility-container a {
@@ -203,11 +205,11 @@ section {
     margin-bottom: 20px;
     background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .facility-section:hover {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .facility-text {
@@ -246,37 +248,40 @@ section {
 }
 
 /* Section 6 - Having a Safe Visit section */
-.safety-title {
-    width: calc(100% - 160px);
-    margin: 20px 80px;
-    text-align: left;
+.safety-container {
+    padding: 0 80px;
+    font-size: 18px;
+    text-align: justify;
 }
 
-.safety-container {
-    margin-bottom: 80px;
+.safety-title {
+    margin-bottom: 20px;
 }
 
 .safety-container p {
     margin-bottom: 10px;
 }
 
-.safety-text ul li {
+.safety-text ul {
+    padding-left: 20px;
     margin-bottom: 5px;
     list-style: disc;
+}
+
+.safety-text ul li {
+    margin-bottom: 5px;
 }
 
 /* Section 7 - Map and Working hours section */
 .map-working-hours-container {
     display: flex;
-    width: calc(100% - 160px);
-    margin: 40px;
+    margin: 0 40px;
 }
 
 .map-container {
     position: relative;
     flex: 1;
     width: 50%;
-    margin: 0 auto;
 }
 
 .park-map {
@@ -285,7 +290,7 @@ section {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .download-map {
@@ -293,15 +298,18 @@ section {
     top: 10px;
     left: 10px;
     padding: 10px 20px;
-    color: #fff;
-    background-color: var(--theme-2);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--theme-3);
+    cursor: pointer;
+    background-color: var(--translucent);
+    backdrop-filter: blur(6px);
     border: none;
     border-radius: 5px;
 }
 
 .download-map:hover {
-    cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .working-hours {
@@ -310,13 +318,13 @@ section {
     margin-left: 40px;
     background-color: var(--theme-6);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px var(--opaque);
+    box-shadow: var(--box-shadow);
 }
 
 .working-hours table {
     width: 100%;
     height: auto;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
     border-collapse: collapse;
 }
 
@@ -326,5 +334,5 @@ section {
 
 .working-hours td {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid silver;
 }

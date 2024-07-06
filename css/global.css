@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: 150ms;
 }
 
 :root {
@@ -13,6 +14,8 @@
     --theme-5: #653780;
     --theme-6: #3f1651;
     --opaque: rgba(0, 0, 0, 0.6);
+    --box-shadow: 10px 10px 20px var(--opaque);
+    --translucent: rgba(255, 255, 255, 0.4);
 }
 
 body {
@@ -22,6 +25,7 @@ body {
     min-width: min-content;
     margin: 0;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 16px;
 }
 
 header {
@@ -57,9 +61,11 @@ header .nav-menu {
 
 header .nav-btn {
     min-height: 100%;
-    padding: 60px 10px;
+    padding: 30px 20px;
+    margin: 30px 0;
     font-size: 25px;
     text-decoration: none;
+    border-radius: 20px;
 }
 
 header .nav-btn .nav-btn-text {
@@ -75,7 +81,11 @@ header .nav-btn .nav-btn-text {
 /* Change colour on hover the nav-btn */
 .nav-btn:hover {
     color: var(--theme-3);
+}
+
+header .nav-btn:hover {
     background-color: var(--theme-5);
+    box-shadow: var(--box-shadow);
 }
 
 .bookings-indicator {
@@ -176,8 +186,7 @@ hr {
 }
 
 .social-media-icon:hover {
-    opacity: 0.8;
-    transition: opacity 150ms;
+    opacity: 0.6;
 }
 
 /* Enable responsive layout - Change to nav-btn row to single column */
