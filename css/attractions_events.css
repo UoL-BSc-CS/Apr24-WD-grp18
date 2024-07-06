@@ -18,6 +18,7 @@ section:last-child {
     margin: 0;
 }
 
+/* Sections 1 - Top Headings */
 #title {
     width: 1000px;
     padding: 20px;
@@ -46,6 +47,7 @@ section:last-child {
     opacity: 0.7;
 }
 
+/* Section 2 - Attractions */
 #attractions-title {
     margin: 80px 80px 0;
 }
@@ -89,6 +91,7 @@ section:last-child {
     opacity: 0.6;
 }
 
+/* Section 3 - Live Events */
 #live-events-container {
     display: grid;
     gap: 30px;
@@ -128,6 +131,7 @@ section:last-child {
     opacity: 0.6;
 }
 
+/* Booking Summary */
 #current-booking-sticky-box {
     position: sticky;
     bottom: 0;
