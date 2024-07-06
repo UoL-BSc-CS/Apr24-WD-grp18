@@ -22,13 +22,13 @@ section {
     text-align: center;
 }
 
-.park-image-container {
+#park-image-container {
     position: relative;
     width: 1000px;
     padding: 0;
 }
 
-.park-image {
+#park-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -36,29 +36,29 @@ section {
 }
 
 /* Section 2 - About Us section */
-.about-us {
+#about-us {
     margin: 0 120px;
     font-size: 18px;
     text-align: justify;
 }
 
-.about-us-title {
+#about-us-title {
     margin-bottom: 10px;
 }
 
-.about-us-text {
+#about-us-text {
     text-align: left;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
 /* Section 3 - Testimonial section */
-.testimonials-title {
+#testimonials-title {
     margin: 0 40px 20px;
     text-align: center;
 }
 
-.testimonials-container {
+#testimonials-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -120,7 +120,7 @@ section {
 }
 
 /* Section 4 - Ticket Prices and Packages section */
-.ticket-title {
+#ticket-title {
     margin: 0 80px 20px;
     text-align: left;
 }
@@ -187,14 +187,14 @@ section {
     text-align: left;
 }
 
-.facility-container {
+#facility-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 80px;
 }
 
-.facility-container a {
+#facility-container a {
     color: inherit;
     text-decoration: none;
 }
@@ -248,43 +248,43 @@ section {
 }
 
 /* Section 6 - Having a Safe Visit section */
-.safety-container {
+#safety-container {
     padding: 0 80px;
     font-size: 18px;
     text-align: justify;
 }
 
-.safety-title {
+#safety-title {
     margin-bottom: 20px;
 }
 
-.safety-container p {
+#safety-container p {
     margin-bottom: 10px;
 }
 
-.safety-text ul {
+#safety-text ul {
     padding-left: 20px;
     margin-bottom: 5px;
     list-style: disc;
 }
 
-.safety-text ul li {
+#safety-text ul li {
     margin-bottom: 5px;
 }
 
 /* Section 7 - Map and Working hours section */
-.map-working-hours-container {
+#map-working-hours-container {
     display: flex;
     margin: 0 40px;
 }
 
-.map-container {
+#map-container {
     position: relative;
     flex: 1;
     width: 50%;
 }
 
-.park-map {
+#park-map {
     display: block;
     width: 100%;
     height: auto;
@@ -293,7 +293,7 @@ section {
     box-shadow: var(--box-shadow);
 }
 
-.download-map {
+#download-map {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -308,11 +308,11 @@ section {
     border-radius: 5px;
 }
 
-.download-map:hover {
+#download-map:hover {
     opacity: 0.7;
 }
 
-.working-hours {
+#working-hours {
     width: 50%;
     padding: 20px;
     margin-left: 40px;
@@ -321,18 +321,18 @@ section {
     box-shadow: var(--box-shadow);
 }
 
-.working-hours table {
+#working-hours table {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
     border-collapse: collapse;
 }
 
-.working-hours h2 {
+#working-hours h2 {
     margin-bottom: 8px;
 }
 
-.working-hours td {
+#working-hours td {
     padding: 8px;
     border: 1px solid silver;
 }
