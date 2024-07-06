@@ -15,8 +15,8 @@ section:last-child {
 
 /* Styling of brand logo contained in top section */
 h1 {
-    margin: 50px 0;
-    font-size: 130px;
+    margin: 36px 0;
+    font-size: 128px;
     text-align: center;
 }
 
@@ -254,7 +254,6 @@ h2 {
 }
 
 #section-popular-attractions-events p {
-    padding: 8px;
     font-size: 20px;
     color: var(--theme-1);
 }
@@ -282,13 +281,13 @@ h2 {
 }
 
 .attractions-events-text {
-    padding: 15px 30px 5px;
+    padding: 10px 30px 0;
     font-size: 18px;
 }
 
 .see-more-btn {
     align-self: flex-end;
-    padding: 20px 30px;
+    padding: 15px 30px;
     color: var(--theme-2);
     text-decoration: none;
 }

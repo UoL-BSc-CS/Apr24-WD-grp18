@@ -3,7 +3,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    line-height: 1.5;
     transition: 150ms;
+}
+
+button,
+input {
+    font: inherit;
 }
 
 :root {
