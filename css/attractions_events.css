@@ -13,6 +13,11 @@ section {
     margin: 0 80px;
 }
 
+section:last-child {
+    align-self: stretch;
+    margin: 0;
+}
+
 #title {
     width: 1000px;
     padding: 20px;
