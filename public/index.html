@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Head section containing the title, description and meta information of the home page -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+        <meta name="keywords" content="theme park,amusement park,attractions,leisure,recreation" />
+        <meta name="author" content="web-development-group18" />
+        <title>Theme Park</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="manifest" href="assets/site.webmanifest" />
+        <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="theme-color" content="#653780" />
+        <meta name="apple-mobile-web-app-title" content="Theme Park" />
+        <meta name="application-name" content="Theme Park" />
+        <!-- SEO tags -->
+        <meta property="og:title" content="Theme Park" />
+        <meta property="og:description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+        <meta property="og:type" content="website" />
+        <!-- We don't know the absolute URL before uploading -->
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:image" content="https://example.com/assets/og-image.jpg" />
+        <meta name="twitter:title" content="Theme Park" />
+        <meta name="twitter:description" content="This is the home page of the Theme Park website which promotes the attractions and events of the Theme Park and allows visitors to buy tickets online." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://example.com/assets/og-image.jpg" />
+        <!-- Icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- Global styles -->
+        <link rel="stylesheet" href="css/global.css" />
+        <!-- Local styles -->
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <header>
+            <!-- Header of the Home Page containing the Theme Park brand logo, nav menu and bookings indicator -->
+            <h2 class="brand-logo">THEME PARK</h2>
+            <div class="nav-menu">
+                <a class="nav-btn" href="index.html">
+                    <div class="nav-btn-text">Home</div>
+                </a>
+                <a class="nav-btn" href="attractions_events.html">
+                    <div class="nav-btn-text">Attractions & Events</div>
+                </a>
+                <a class="nav-btn" href="park_info.html">
+                    <div class="nav-btn-text">Park Information</div>
+                </a>
+            </div>
+            <div class="bookings-indicator">
+                <span class="bookings-text">Bookings (5)</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Main content containing 5 sections -->
+
+            <!-- Section 1 - containing our Theme Park slideshow and slogan, and shortcut button to buy tickets -->
+            <section>
+                <h1>THEME PARK</h1>
+                <div id="slideshow-container">
+                    <div id="slides">
+                        <img src="assets/index/thema_park.jpg" alt="Thema Park Image" />
+                        <img src="assets/index/wonderwheel.jpg" alt="Wonder Wheel" />
+                        <img src="assets/index/carouselride.jpg" alt="Carousel Rides" />
+                        <!-- Repeat the first image to make the slideshow look like a loop in single direction -->
+                        <img src="assets/index/thema_park.jpg" alt="Thema Park Image" />
+                    </div>
+                    <div id="slogan-text">
+                        <p>
+                            <q>Where Dreams Come True!</q>
+                        </p>
+                    </div>
+                    <div id="buy-tickets-container">
+                        <a href="park_info.html#ticket-options" id="buy-tickets-btn">Get Tickets</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 - displaying reviews/comments from media sources -->
+            <section>
+                <div id="media-review-container" class="quotes-container">
+                    <input type="radio" name="radioset1" id="r1" checked />
+                    <input type="radio" name="radioset1" id="r2" />
+                    <input type="radio" name="radioset1" id="r3" />
+                    <div id="rb1" class="review-block quotes-block">
+                        <figure>
+                            <blockquote>
+                                <p>Incredieble Experience!</p>
+                            </blockquote>
+                            <figcaption>Times Magazine</figcaption>
+                        </figure>
+                        <label for="r3" class="fa fa-arrow-circle-left"></label>
+                        <label for="r2" class="fa fa-arrow-circle-right"></label>
+                    </div>
+                    <div id="rb2" class="review-block quotes-block">
+                        <figure>
+                            <blockquote>
+                                <p>Full day of fun with your family here.</p>
+                            </blockquote>
+                            <figcaption>Children's World Magazine</figcaption>
+                        </figure>
+                        <label for="r1" class="fa fa-arrow-circle-left"></label>
+                        <label for="r3" class="fa fa-arrow-circle-right"></label>
+                    </div>
+                    <div id="rb3" class="review-block quotes-block">
+                        <figure>
+                            <blockquote>
+                                <p>Highly recommended spot for leisure and unique experience.</p>
+                            </blockquote>
+                            <figcaption>Google Travel</figcaption>
+                        </figure>
+                        <label for="r2" class="fa fa-arrow-circle-left"></label>
+                        <label for="r1" class="fa fa-arrow-circle-right"></label>
+                    </div>
+                    <div id="review-block-status" class="quotes-block-status">
+                        <label id="dot1" class="dots" for="r1"></label>
+                        <label id="dot2" class="dots" for="r2"></label>
+                        <label id="dot3" class="dots" for="r3"></label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 - showcasing most popular attractions and events -->
+            <section>
+                <div id="section-popular-attractions-events">
+                    <h2>BEST RIDES IN THE CITY</h2>
+                    <p>
+                        <q>If you don't try this app, you won't become the superhero you were meant to be</q>
+                    </p>
+                    <div id="attractions-events-gallery">
+                        <div class="attractions-events-box">
+                            <div class="attractions-events-image">
+                                <img src="assets/attractions_events/roller_coaster.jpeg" alt="Attraction Image" />
+                            </div>
+                            <div class="attractions-events-text">Special Ride 1</div>
+                            <a class="see-more-btn" href="#">
+                                <div class="see-more-text">See More</div>
+                            </a>
+                        </div>
+                        <div class="attractions-events-box">
+                            <div class="attractions-events-image">
+                                <img src="assets/attractions_events/water_ride.jpg" alt="Attraction Image" />
+                            </div>
+                            <div class="attractions-events-text">Special Ride 2</div>
+                            <a class="see-more-btn" href="#">
+                                <div class="see-more-text">See More</div>
+                            </a>
+                        </div>
+                        <div class="attractions-events-box">
+                            <div class="attractions-events-image">
+                                <img src="assets/attractions_events/event.jpg" alt="Live Event Image" />
+                            </div>
+                            <div class="attractions-events-text">Special Event 1</div>
+                            <a class="see-more-btn" href="#">
+                                <div class="see-more-text">See More</div>
+                            </a>
+                        </div>
+                        <div class="attractions-events-box">
+                            <div class="attractions-events-image">
+                                <img src="assets/attractions_events/event.jpg" alt="Live Event Image" />
+                            </div>
+                            <div class="attractions-events-text">Special Event 2</div>
+                            <a class="see-more-btn" href="#">
+                                <div class="see-more-text">See More</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 - sharing visitors' comments/experience -->
+            <section>
+                <div id="visitor-comment-container" class="quotes-container">
+                    <input type="radio" name="radioset2" id="rr1" checked />
+                    <input type="radio" name="radioset2" id="rr2" />
+                    <input type="radio" name="radioset2" id="rr3" />
+                    <div id="c1" class="comment-block quotes-block">
+                        <figure>
+                            <blockquote>
+                                <p>The landscape and recreational facilities are great! Absolutely Love It.</p>
+                            </blockquote>
+                            <figcaption>Maria Lopez</figcaption>
+                        </figure>
+                        <label for="rr3" class="fa fa-arrow-circle-left"></label>
+                        <label for="rr2" class="fa fa-arrow-circle-right"></label>
+                    </div>
+                    <div id="c2" class="comment-block quotes-block">
+                        <figure>
+                            <blockquote>
+                                <p>It’s my family’s favourite.</p>
+                            </blockquote>
+                            <figcaption>Peter Thompson</figcaption>
+                        </figure>
+                        <label for="rr1" class="fa fa-arrow-circle-left"></label>
+                        <label for="rr3" class="fa fa-arrow-circle-right"></label>
+                    </div>
+                    <div id="c3" class="comment-block quotes-block">
+                        <figure>
+                            <blockquote>
+                                <p>The most amazing experience of my life. My children had fun so much.</p>
+                            </blockquote>
+                            <figcaption>Julia Simsons</figcaption>
+                        </figure>
+                        <label for="rr2" class="fa fa-arrow-circle-left"></label>
+                        <label for="rr1" class="fa fa-arrow-circle-right"></label>
+                    </div>
+                    <div id="comment-block-status" class="quotes-block-status">
+                        <label id="d1" class="dots" for="rr1"></label>
+                        <label id="d2" class="dots" for="rr2"></label>
+                        <label id="d3" class="dots" for="rr3"></label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5 - containing the bottom menu and the social media links of the Theme Park -->
+            <section>
+                <div class="bottom-section">
+                    <div class="bottom-menu">
+                        <a class="nav-btn" href="index.html">
+                            <div class="nav-btn-text">Home</div>
+                        </a>
+                        <a class="nav-btn" href="attractions_events.html">
+                            <div class="nav-btn-text">Attractions & Events</div>
+                        </a>
+                        <a class="nav-btn" href="park_info.html">
+                            <div class="nav-btn-text">Park Information</div>
+                        </a>
+                    </div>
+                    <div class="bottom-brand-logo">
+                        <h3>THEME PARK</h3>
+                    </div>
+                </div>
+                <hr />
+                <div class="social-media-box">
+                    <a href="#" class="social-media-icon">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a href="#" class="social-media-icon">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a href="#" class="social-media-icon">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                    <a href="#" class="social-media-icon">
+                        <span class="fa fa-youtube-play"></span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Footer content -->
+            <div class="footer-content">Copyleft © 2010 – 2020 Theme Park. No right reserved.</div>
+            <!-- Back to top shortcut button -->
+            <div class="back-to-top-btn">
+                <a href="#">
+                    <span>Back to Top</span>
+                </a>
+            </div>
+        </footer>
+
+        <!-- JavaScript file links or additional scripts -->
+    </body>
+</html>

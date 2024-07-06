@@ -1,0 +1,11 @@
+{
+    "type": "module",
+    "devDependencies": {
+        "@html-eslint/eslint-plugin": "^0.25.0",
+        "@html-eslint/parser": "^0.25.0",
+        "eslint": "^9.6.0",
+        "stylelint": "^16.6.1",
+        "stylelint-config-recess-order": "^5.0.1",
+        "stylelint-config-standard": "^36.0.1"
+    }
+}

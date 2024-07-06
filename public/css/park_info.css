@@ -1,0 +1,349 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section:last-child {
+    align-self: stretch;
+    margin: 0;
+}
+
+/* Section 1 - Title section */
+#title {
+    width: 1000px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#park-image-container {
+    position: relative;
+    width: 1000px;
+    padding: 0;
+}
+
+#park-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Section 2 - About Us section */
+#about-us {
+    margin: 0 120px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#about-us-title {
+    margin-bottom: 10px;
+}
+
+#about-us-text {
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Section 3 - Testimonial section */
+#testimonials-title {
+    margin: 0 40px 20px;
+    text-align: center;
+}
+
+#testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 40px;
+}
+
+.testimonial {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    min-width: 250px;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--theme-6);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.testimonial-text {
+    height: 45px;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.testimonial-user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.testimonial-text q {
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+.testimonial-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonial-name {
+    font-weight: bold;
+}
+
+.see-more-btn {
+    color: var(--theme-2);
+    text-align: end;
+    text-decoration: none;
+}
+
+.see-more-btn:hover {
+    opacity: 0.6;
+}
+
+/* Section 4 - Ticket Prices and Packages section */
+#ticket-title {
+    margin: 0 80px 20px;
+    text-align: left;
+}
+
+#ticket-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 0 40px;
+}
+
+.ticket-option {
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 30%;
+    min-width: 250px;
+    min-height: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--theme-6);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.price {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.price span {
+    font-size: 0.6em;
+}
+
+.select-button {
+    align-self: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: var(--theme-2);
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.select-button:hover {
+    opacity: 0.7;
+}
+
+.ticket-option ul {
+    flex-grow: 1;
+    height: 120px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    list-style: disc;
+}
+
+/* Section 5 - Park Facilities section */
+#park-facilities {
+    margin: 20px 80px;
+    text-align: left;
+}
+
+#facility-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+#facility-container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.facility-section {
+    display: flex;
+    width: 100%;
+    background-color: var(--theme-6);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.facility-section:hover {
+    opacity: 0.7;
+}
+
+.facility-text {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.facility-text h3 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.facility-text p {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.facility-text ul li {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.explore-more {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color: var(--theme-2);
+}
+
+.facility-image {
+    order: 2;
+    width: 500px;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Section 6 - Having a Safe Visit section */
+#safety-container {
+    padding: 0 80px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#safety-title {
+    margin-bottom: 20px;
+}
+
+#safety-container p {
+    margin-bottom: 10px;
+}
+
+#safety-text ul {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    list-style: disc;
+}
+
+/* Section 7 - Map and Working hours section */
+#map-working-hours-container {
+    display: flex;
+    margin: 0 40px;
+}
+
+#map-container {
+    position: relative;
+    flex: 1;
+    width: 50%;
+}
+
+#park-map {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+#download-map {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--theme-3);
+    cursor: pointer;
+    background-color: var(--translucent);
+    backdrop-filter: blur(6px);
+    border: none;
+    border-radius: 5px;
+}
+
+#download-map:hover {
+    opacity: 0.8;
+}
+
+#working-hours {
+    width: 50%;
+    padding: 20px;
+    margin-left: 40px;
+    background-color: var(--theme-6);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+#working-hours h2 {
+    margin-bottom: 8px;
+}
+
+#working-hours table {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#working-hours th {
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+#working-hours td {
+    padding: 4px 8px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid silver;
+    opacity: 0.9;
+}
