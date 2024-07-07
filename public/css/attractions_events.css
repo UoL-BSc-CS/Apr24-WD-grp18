@@ -68,7 +68,7 @@ section:last-child {
     display: inline-flex;
     flex-direction: column;
     width: 320px;
-    height: 360px;
+    height: 560px;
     background-color: var(--theme-6);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
