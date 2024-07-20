@@ -38,20 +38,36 @@
     <body>
         <header>
             <!-- Header of the Home Page containing the Theme Park brand logo, nav menu and bookings indicator -->
-            <h2 class="brand-logo">THEME PARK</h2>
-            <div class="nav-menu">
-                <a class="nav-btn" href="index.html">
-                    <div class="nav-btn-text">Home</div>
-                </a>
-                <a class="nav-btn" href="attractions_events.html">
-                    <div class="nav-btn-text">Attractions & Events</div>
-                </a>
-                <a class="nav-btn" href="park_info.html">
-                    <div class="nav-btn-text">Park Information</div>
-                </a>
+            <input type="checkbox" id="nav-is-showing" />
+            <label id="nav-show" for="nav-is-showing">
+                <div id="nav-show-inner"><span class="fa fa-bars"></span></div>
+            </label>
+            <label id="nav-overlay" for="nav-is-showing"></label>
+            <h2 id="brand-logo">THEME PARK</h2>
+            <div id="nav-container">
+                <ul id="nav-menu">
+                    <li>
+                        <a class="nav-btn" href="index.html">
+                            <span class="fa fa-home"></span>
+                            <div class="nav-btn-text">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="attractions_events.html">
+                            <span class="fa fa-map-marker"></span>
+                            <div class="nav-btn-text">Attractions & Events</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="park_info.html">
+                            <span class="fa fa-info-circle"></span>
+                            <div class="nav-btn-text">Park Information</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="bookings-indicator">
-                <span class="bookings-text">Bookings (5)</span>
+            <div id="bookings-indicator">
+                <span id="bookings-text">Bookings (5)</span>
             </div>
         </header>
 
@@ -218,8 +234,11 @@
 
             <!-- Section 5 - containing the bottom menu and the social media links of the Theme Park -->
             <section>
-                <div class="bottom-section">
-                    <div class="bottom-menu">
+                <div id="bottom-section">
+                    <div id="bottom-brand-logo">
+                        <h3>THEME PARK</h3>
+                    </div>
+                    <div id="bottom-menu">
                         <a class="nav-btn" href="index.html">
                             <div class="nav-btn-text">Home</div>
                         </a>
@@ -230,12 +249,9 @@
                             <div class="nav-btn-text">Park Information</div>
                         </a>
                     </div>
-                    <div class="bottom-brand-logo">
-                        <h3>THEME PARK</h3>
-                    </div>
                 </div>
                 <hr />
-                <div class="social-media-box">
+                <div id="social-media-box">
                     <a href="#" class="social-media-icon">
                         <span class="fa fa-facebook"></span>
                     </a>
@@ -254,9 +270,9 @@
 
         <footer>
             <!-- Footer content -->
-            <div class="footer-content">Copyleft © 2010 – 2020 Theme Park. No right reserved.</div>
+            <div id="footer-content">Copyleft © 2010 – 2020 Theme Park. No right reserved.</div>
             <!-- Back to top shortcut button -->
-            <div class="back-to-top-btn">
+            <div id="back-to-top-btn">
                 <a href="#">
                     <span>Back to Top</span>
                 </a>

@@ -38,20 +38,36 @@
     <body>
         <header>
             <!-- Header of the Home Page containing the Theme Park brand logo, nav menu and bookings indicator -->
-            <h2 class="brand-logo">THEME PARK</h2>
-            <div class="nav-menu">
-                <a class="nav-btn" href="index.html">
-                    <div class="nav-btn-text">Home</div>
-                </a>
-                <a class="nav-btn" href="attractions_events.html">
-                    <div class="nav-btn-text">Attractions & Events</div>
-                </a>
-                <a class="nav-btn" href="park_info.html">
-                    <div class="nav-btn-text">Park Information</div>
-                </a>
+            <input type="checkbox" id="nav-is-showing" />
+            <label id="nav-show" for="nav-is-showing">
+                <div id="nav-show-inner"><span class="fa fa-bars"></span></div>
+            </label>
+            <label id="nav-overlay" for="nav-is-showing"></label>
+            <h2 id="brand-logo">THEME PARK</h2>
+            <div id="nav-container">
+                <ul id="nav-menu">
+                    <li>
+                        <a class="nav-btn" href="index.html">
+                            <span class="fa fa-home"></span>
+                            <div class="nav-btn-text">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="attractions_events.html">
+                            <span class="fa fa-map-marker"></span>
+                            <div class="nav-btn-text">Attractions & Events</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="park_info.html">
+                            <span class="fa fa-info-circle"></span>
+                            <div class="nav-btn-text">Park Information</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="bookings-indicator">
-                <span class="bookings-text">Bookings (5)</span>
+            <div id="bookings-indicator">
+                <span id="bookings-text">Bookings (5)</span>
             </div>
         </header>
 
@@ -61,8 +77,8 @@
             <!-- Sections 1 - Top Headings -->
             <section>
                 <h1 id="title">Attractions & Events</h1>
+                <p id="events-time">Events on <time datetime="2024-05-21T09:00+01:00">21 May 2024</time></p>
                 <div id="filter-buttons">
-                    <p id="events-time">Events on <time datetime="2024-05-21T09:00+01:00">21 May 2024</time></p>
                     <button type="button" class="filter-set">Default</button>
                     <button type="button" class="filter-set">A-Z</button>
                     <button type="button" class="filter-set">List View</button>
@@ -72,19 +88,19 @@
             <!-- Section 2 - Attractions -->
             <section>
                 <h2 id="attractions-title">Attractions</h2>
-                <div id="attractions-container">
+                <div id="attractions-container" class="activities-container">
                     <!-- Attraction 1 -->
-                    <div class="attractions-box">
-                        <div class="attraction-image-container">
-                            <img src="assets/attractions_events/roller_coaster.jpeg" alt="Attraction Image" width="320" height="227" class="attractions-img" />
+                    <div class="attractions-box activities-box">
+                        <div class="attraction-image-container activities-image-container">
+                            <img src="assets/attractions_events/roller_coaster.jpeg" alt="Attraction Image" class="attractions-image activities-image" />
                         </div>
-                        <div class="attractions-text">
+                        <div class="attractions-text activities-text">
                             <h3>Roller Coaster</h3>
                             <div><time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time></div>
                             <a href="#">
-                                <div class="attractions-details">
-                                    Brace yourself for an adrenaline-fueled adventure! This high-speed coaster twists, turns, and launches you through heart-pounding loops. <br>
-                                    Age & Height: Thrill-seekers aged 14 and above, with a minimum height of 48 inches (122 cm). <br>
+                                <div class="attractions-details activities-details">
+                                    Brace yourself for an adrenaline-fueled adventure! This high-speed coaster twists, turns, and launches you through heart-pounding loops. <br />
+                                    Age & Height: Thrill-seekers aged 14 and above, with a minimum height of 48 inches (122 cm). <br />
                                     Supervision: Riders under 14 must be accompanied by a guardian.
                                 </div>
                             </a>
@@ -92,17 +108,17 @@
                     </div>
 
                     <!-- Attraction 2 -->
-                    <div class="attractions-box">
-                        <div class="attraction-image-container">
-                            <img src="assets/attractions_events/carousel.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img" />
+                    <div class="attractions-box activities-box">
+                        <div class="attraction-image-container activities-image-container">
+                            <img src="assets/attractions_events/carousel.jpg" alt="Attraction Image" class="attractions-image activities-image" />
                         </div>
-                        <div class="attractions-text">
+                        <div class="attractions-text activities-text">
                             <h3>Mystical Carousel</h3>
                             <div><time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time></div>
                             <a href="#">
-                                <div class="attractions-details">
-                                    Embark on a whimsical journey aboard our enchanting carousel. Graceful steeds, magical creatures, and ornate chariots twirl to the tune of nostalgic melodies<br>
-                                    Age & Height: All ages are welcome! No height restrictions.<br>
+                                <div class="attractions-details activities-details">
+                                    Embark on a whimsical journey aboard our enchanting carousel. Graceful steeds, magical creatures, and ornate chariots twirl to the tune of nostalgic melodies<br />
+                                    Age & Height: All ages are welcome! No height restrictions.<br />
                                     Supervision: Children under 6 must be accompanied by a guardian.
                                 </div>
                             </a>
@@ -110,17 +126,17 @@
                     </div>
 
                     <!-- Attraction 3 -->
-                    <div class="attractions-box">
-                        <div class="attraction-image-container">
-                            <img src="assets/attractions_events/water_ride.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img" />
+                    <div class="attractions-box activities-box">
+                        <div class="attraction-image-container activities-image-container">
+                            <img src="assets/attractions_events/water_ride.jpg" alt="Attraction Image" class="attractions-image activities-image" />
                         </div>
-                        <div class="attractions-text">
+                        <div class="attractions-text activities-text">
                             <h3>Water Madness</h3>
                             <div><time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time></div>
                             <a href="#">
-                                <div class="attractions-details">
-                                    Dive into a splash-filled adventure! This exhilarating water ride sends you hurtling down twisting flumes, through tunnels, and over thrilling drops. Get ready to get soaked!<br>
-                                    Age & Height: Adventurers aged 8 and above, with a minimum height of 42 inches (107 cm).<br>
+                                <div class="attractions-details activities-details">
+                                    Dive into a splash-filled adventure! This exhilarating water ride sends you hurtling down twisting flumes, through tunnels, and over thrilling drops. Get ready to get soaked!<br />
+                                    Age & Height: Adventurers aged 8 and above, with a minimum height of 42 inches (107 cm).<br />
                                     Supervision: Riders under 10 must be accompanied by a guardian.
                                 </div>
                             </a>
@@ -128,17 +144,17 @@
                     </div>
 
                     <!-- Attraction 4 -->
-                    <div class="attractions-box">
-                        <div class="attraction-image-container">
-                            <img src="assets/attractions_events/360.jpeg" alt="Attraction Image" width="320" height="227" class="attractions-img" />
+                    <div class="attractions-box activities-box">
+                        <div class="attraction-image-container activities-image-container">
+                            <img src="assets/attractions_events/360.jpeg" alt="Attraction Image" class="attractions-image activities-image" />
                         </div>
-                        <div class="attractions-text">
+                        <div class="attractions-text activities-text">
                             <h3>Skyfall 360</h3>
                             <div><time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time></div>
                             <a href="#">
-                                <div class="attractions-details">
-                                    Brace yourself for a gravity-defying experience! This thrilling ride takes you on a breathtaking spin, rotating a full 360 degrees in all directions.<br>
-                                    Age & Height: Adventurers aged 12 and above, with a minimum height of 52 inches (132 cm).<br>
+                                <div class="attractions-details activities-details">
+                                    Brace yourself for a gravity-defying experience! This thrilling ride takes you on a breathtaking spin, rotating a full 360 degrees in all directions.<br />
+                                    Age & Height: Adventurers aged 12 and above, with a minimum height of 52 inches (132 cm).<br />
                                     Supervision: Riders under 14 must be accompanied by a guardian.
                                 </div>
                             </a>
@@ -146,16 +162,16 @@
                     </div>
 
                     <!-- Attraction 5 -->
-                    <div class="attractions-box">
-                        <div class="attraction-image-container">
-                            <img src="assets/attractions_events/catterpiller_ride.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img" />
+                    <div class="attractions-box activities-box">
+                        <div class="attraction-image-container activities-image-container">
+                            <img src="assets/attractions_events/catterpiller_ride.jpg" alt="Attraction Image" class="attractions-image activities-image" />
                         </div>
-                        <div class="attractions-text">
+                        <div class="attractions-text activities-text">
                             <h3>Cway-Z Caterpillar</h3>
                             <div><time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time></div>
                             <a href="#">
-                                <div class="attractions-details">
-                                    Climb aboard our whimsical caterpillar-themed ride! As you wind through colorful tunnels, the caterpillar twists and turns, creating a delightful experience for all ages. <br>Age & Height: Suitable for riders of all ages, with a minimum height of 36 inches (91 cm).<br>
+                                <div class="attractions-details activities-details">
+                                    Climb aboard our whimsical caterpillar-themed ride! As you wind through colorful tunnels, the caterpillar twists and turns, creating a delightful experience for all ages. <br />Age & Height: Suitable for riders of all ages, with a minimum height of 36 inches (91 cm).<br />
                                     Supervision: Children under 6 must be accompanied by a guardian.
                                 </div>
                             </a>
@@ -163,17 +179,17 @@
                     </div>
 
                     <!-- Attraction 6 -->
-                    <div class="attractions-box">
-                        <div class="attraction-image-container">
-                            <img src="assets/attractions_events/Twirl.jpg" alt="Attraction Image" width="320" height="227" class="attractions-img" />
+                    <div class="attractions-box activities-box">
+                        <div class="attraction-image-container activities-image-container">
+                            <img src="assets/attractions_events/Twirl.jpg" alt="Attraction Image" class="attractions-image activities-image" />
                         </div>
-                        <div class="attractions-text">
+                        <div class="attractions-text activities-text">
                             <h3>Air-Swing 2.0</h3>
                             <div><time datetime="08:00">8:00 AM</time> to <time datetime="21:00">9:00 PM</time></div>
                             <a href="#">
-                                <div class="attractions-details">
-                                    Soar through the sky on our thrilling swing ride! As you ascend, the seats spin freely, giving you a sensation of weightlessness. Feel the wind in your hair as you swing higher and higher!<br>
-                                    Age & Height: Adventurers aged 14 and above, with a minimum height of 54 inches (137 cm).<br>
+                                <div class="attractions-details activities-details">
+                                    Soar through the sky on our thrilling swing ride! As you ascend, the seats spin freely, giving you a sensation of weightlessness. Feel the wind in your hair as you swing higher and higher!<br />
+                                    Age & Height: Adventurers aged 14 and above, with a minimum height of 54 inches (137 cm).<br />
                                     Supervision: Riders under 16 must be accompanied by a guardian.
                                 </div>
                             </a>
@@ -185,27 +201,31 @@
             <!-- Section 3 - Live Events -->
             <section>
                 <h2 id="live-events-title">Live Events</h2>
-                <div id="live-events-container">
+                <div id="live-events-container" class="activities-container">
                     <!-- Event 1 -->
-                    <div class="live-events-box">
-                        <img src="assets/attractions_events/event.jpg" alt="Live Event Image" class="live-events-img" />
-                        <div class="live-events-text">
+                    <div class="live-events-box activities-box">
+                        <div class="live-events-image-container activities-image-container">
+                            <img src="assets/attractions_events/event.jpg" alt="Live Event Image" class="live-events-image activities-image" />
+                        </div>
+                        <div class="live-events-text activities-text">
                             <h3>Fire Show</h3>
                             <div><time datetime="08:00">7:00 PM</time> to <time datetime="21:00">7:40 PM</time></div>
                             <a href="#">
-                                <div class="live-events-details">Experience the mesmerizing Fire Spectacle – a dazzling display of flames, choreography, and music. Our skilled performers breathe life into the night with their fiery artistry, creating an unforgettable spectacle that will leave you in awe.</div>
+                                <div class="live-events-details activities-details">Experience the mesmerizing Fire Spectacle – a dazzling display of flames, choreography, and music. Our skilled performers breathe life into the night with their fiery artistry, creating an unforgettable spectacle that will leave you in awe.</div>
                             </a>
                         </div>
                     </div>
 
                     <!-- Event 2 -->
-                    <div class="live-events-box">
-                        <img src="assets/attractions_events/Event_2.jpeg" alt="Live Event Image" class="live-events-img" />
-                        <div class="live-events-text">
+                    <div class="live-events-box activities-box">
+                        <div class="live-events-image-container activities-image-container">
+                            <img src="assets/attractions_events/Event_2.jpeg" alt="Live Event Image" class="live-events-image activities-image" />
+                        </div>
+                        <div class="live-events-text activities-text">
                             <h3>Event 2</h3>
                             <div><time datetime="08:00">8:15 PM</time> to <time datetime="21:00">8:50 PM</time></div>
                             <a href="#">
-                                <div class="live-events-details">Step into a world of wonder and illusion with our captivating Magic Extravaganza. Our skilled magicians will leave you spellbound as they perform mind-bending tricks, teleportations, and vanishings. Prepare to be amazed!</div>
+                                <div class="live-events-details activities-details">Step into a world of wonder and illusion with our captivating Magic Extravaganza. Our skilled magicians will leave you spellbound as they perform mind-bending tricks, teleportations, and vanishings. Prepare to be amazed!</div>
                             </a>
                         </div>
                     </div>
@@ -250,8 +270,11 @@
 
             <!-- Section 4 - containing the bottom menu and the social media links of the Theme Park -->
             <section>
-                <div class="bottom-section">
-                    <div class="bottom-menu">
+                <div id="bottom-section">
+                    <div id="bottom-brand-logo">
+                        <h3>THEME PARK</h3>
+                    </div>
+                    <div id="bottom-menu">
                         <a class="nav-btn" href="index.html">
                             <div class="nav-btn-text">Home</div>
                         </a>
@@ -262,12 +285,9 @@
                             <div class="nav-btn-text">Park Information</div>
                         </a>
                     </div>
-                    <div class="bottom-brand-logo">
-                        <h3>THEME PARK</h3>
-                    </div>
                 </div>
                 <hr />
-                <div class="social-media-box">
+                <div id="social-media-box">
                     <a href="#" class="social-media-icon">
                         <span class="fa fa-facebook"></span>
                     </a>
@@ -286,9 +306,9 @@
 
         <footer>
             <!-- Footer content -->
-            <div class="footer-content">Copyleft © 2010 – 2020 Theme Park. No right reserved.</div>
+            <div id="footer-content">Copyleft © 2010 – 2020 Theme Park. No right reserved.</div>
             <!-- Back to top shortcut button -->
-            <div class="back-to-top-btn">
+            <div id="back-to-top-btn">
                 <a href="#">
                     <span>Back to Top</span>
                 </a>
