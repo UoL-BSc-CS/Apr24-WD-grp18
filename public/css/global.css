@@ -20,18 +20,16 @@ input {
     --theme-5: #653780;
     --theme-6: #3f1651;
     --opaque: rgba(0, 0, 0, 0.6);
-    --box-shadow: 10px 10px 20px var(--opaque);
+    --box-shadow: 0.625rem 0.625rem 1.25rem var(--opaque);
     --translucent: rgba(255, 255, 255, 0.4);
+
+    font-size: clamp(12px, 0.5vw + 9.6px, 16px);
 }
 
 body {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    min-width: min-content;
-    margin: 0;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 16px;
 }
 
 header {
@@ -39,39 +37,85 @@ header {
     top: 0;
     z-index: 100;
     display: flex;
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
-    width: inherit;
-    min-width: 200px;
-    max-width: inherit;
-    max-height: 150px;
+    padding: 1rem 2.5rem;
     background-color: var(--theme-4);
 }
 
+#nav-is-showing {
+    display: none;
+}
+
+#nav-show {
+    display: none;
+    align-items: center;
+}
+
+#nav-show-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.75rem;
+    color: var(--theme-3);
+    cursor: pointer;
+    background-color: var(--theme-6);
+    border-radius: 1.25rem;
+}
+
+#nav-show-inner:hover,
+#nav-show-inner:focus {
+    opacity: 0.7;
+}
+
+#nav-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--opaque);
+    opacity: 0;
+    transition: opacity 0.4s;
+    animation: z-index 0.4s steps(1) forwards;
+}
+
+@keyframes z-index {
+    from {
+        z-index: 1023;
+    }
+
+    to {
+        z-index: -1024;
+    }
+}
+
 header h2 {
-    flex: 40%;
+    flex: 1;
     min-width: max-content;
-    margin-right: 20px;
-    margin-left: 60px;
-    font-size: 50px;
+    margin: 0 1.25rem;
+    font-size: 3.125rem;
     color: var(--theme-2);
 }
 
-header .nav-menu {
+#nav-menu {
     display: flex;
-    flex: 50%;
+    gap: 0 2rem;
     align-items: center;
-    justify-content: space-around;
     color: var(--theme-3);
+    list-style-type: none;
 }
 
 header .nav-btn {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
     min-height: 100%;
-    padding: 30px 20px;
-    margin: 30px 0;
-    font-size: 25px;
+    padding: 1.875rem 1.25rem;
+    margin: 0.875rem 0;
+    font-size: 1.5625rem;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 header .nav-btn .nav-btn-text {
@@ -94,17 +138,14 @@ header .nav-btn:hover {
     box-shadow: var(--box-shadow);
 }
 
-.bookings-indicator {
-    flex: 10%;
+#bookings-indicator {
     min-width: fit-content;
-    padding: 25px;
-    margin-right: 40px;
-    margin-left: 20px;
-    font-size: 25px;
+    padding: 1.5rem;
+    font-size: 1.625rem;
     color: var(--theme-3);
     text-align: center;
     background-color: var(--theme-6);
-    border-radius: 15px 30px;
+    border-radius: 1rem 2rem;
 }
 
 main {
@@ -112,87 +153,94 @@ main {
     background-color: var(--theme-5);
 }
 
+section {
+    /* max-width: 67.5rem; */
+    padding: 0 2rem;
+    margin: auto;
+}
+
 footer {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: var(--theme-4);
 }
 
-footer .footer-content {
-    font-size: 14px;
+#footer-content {
+    padding: 0 5rem;
+    font-size: 0.875rem;
     color: var(--theme-1);
     text-align: center;
     opacity: 0.7;
 }
 
-.back-to-top-btn {
+#back-to-top-btn {
     position: absolute;
     inset: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 0 20px;
+    margin: 0 1.25rem;
 }
 
-.back-to-top-btn a:hover {
+#back-to-top-btn a:hover {
     opacity: 0.6;
 }
 
 /* Change colour on link of the back-to-top */
-.back-to-top-btn a:link,
-.back-to-top-btn a:visited {
+#back-to-top-btn a:link,
+#back-to-top-btn a:visited {
     color: var(--theme-2);
 }
 
 /* Styling of bottom section */
-.bottom-section {
+#bottom-section {
     display: flex;
-    align-items: flex-start;
-    width: 1200px;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 75rem;
 }
 
-.bottom-menu {
+#bottom-menu {
     display: flex;
-    flex: 42%;
 }
 
-.bottom-menu a {
-    padding: 10px;
+#bottom-menu a {
+    padding: 0.625rem;
 }
 
-.bottom-brand-logo {
-    flex: 58%;
-}
-
-.bottom-brand-logo h3 {
-    font-size: 30px;
+#bottom-brand-logo h3 {
+    padding: 0 0.625rem;
+    font-size: 1.875rem;
     color: var(--theme-2);
 }
 
 hr {
-    width: 80%;
-    border-color: var(--theme-6);
+    width: 100%;
+    max-width: 75rem;
+    border: none;
+    border-bottom: 1px solid var(--theme-6);
 }
 
-.social-media-box {
+#social-media-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 30%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 1.875rem 0;
 }
 
 .social-media-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 50px;
-    height: 50px;
-    font-size: 24px;
+    min-width: 3.125rem;
+    height: 3.125rem;
+    font-size: 1.5rem;
     color: var(--theme-3);
     text-decoration: none;
     background-color: var(--theme-6);
@@ -204,24 +252,74 @@ hr {
 }
 
 /* Enable responsive layout - Change to nav-btn row to single column */
-@media (max-width: 1000px) {
-    header h2 {
-        flex: 30%;
+@media (max-width: 1280px) {
+    header {
+        gap: 1.25rem;
+        padding: 1rem;
     }
 
-    header .nav-menu {
+    #nav-show {
         display: flex;
-        flex: 70%;
+    }
+
+    #nav-container {
+        position: fixed;
+        top: 0;
+        left: -22.5rem;
+        z-index: 1024;
+        display: flex;
         flex-direction: column;
+        width: 22.5rem;
+        height: 100%;
+        padding: 0.625rem 1.5rem 0.75rem 1.25rem;
+        overflow-y: auto;
+        background-color: #222;
+        transition: left 0.4s;
     }
 
-    header .nav-menu .nav-btn {
-        padding: 0 10px;
+    #nav-is-showing:checked ~ #nav-container {
+        left: 0;
+    }
+
+    #nav-is-showing:checked ~ #nav-overlay {
+        z-index: 1023;
+        opacity: 0.5;
+        animation: none;
+    }
+
+    header h2 {
+        flex: 1;
         margin: 0;
-        border-radius: 10px;
     }
 
-    .bookings-indicator {
-        flex: 10%;
+    #nav-menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #nav-menu li {
+        border-bottom: 1px solid grey;
+    }
+
+    #nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    #nav-menu .nav-btn {
+        display: flex;
+        align-items: center;
+        padding: 0 0.625rem;
+        margin: 0;
+        color: white;
+        border-radius: 0.625rem;
+    }
+
+    #nav-menu .nav-btn span {
+        width: 2rem;
+        text-align: center;
+    }
+
+    .nav-btn-text {
+        line-height: 5rem;
     }
 }

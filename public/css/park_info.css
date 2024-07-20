@@ -1,7 +1,7 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 5rem;
     align-items: center;
     justify-content: center;
 }
@@ -21,15 +21,14 @@ section:last-child {
 
 /* Section 1 - Title section */
 #title {
-    width: 1000px;
-    padding: 20px;
-    font-size: 40px;
+    padding: 1.25rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 #park-image-container {
     position: relative;
-    width: 1000px;
+    max-width: 62.5rem;
     padding: 0;
 }
 
@@ -37,18 +36,19 @@ section:last-child {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 /* Section 2 - About Us section */
 #about-us {
-    margin: 0 120px;
-    font-size: 18px;
+    max-width: 80rem;
+    margin: 0 2rem;
+    font-size: 1.125rem;
     text-align: justify;
 }
 
 #about-us-title {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 #about-us-text {
@@ -59,7 +59,7 @@ section:last-child {
 
 /* Section 3 - Testimonial section */
 #testimonials-title {
-    margin: 0 40px 20px;
+    margin: 0 2.5rem 1.25rem;
     text-align: center;
 }
 
@@ -67,7 +67,7 @@ section:last-child {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 40px;
+    margin: 0 2.5rem;
 }
 
 .testimonial {
@@ -75,18 +75,18 @@ section:last-child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
-    min-width: 250px;
-    padding: 20px;
-    margin: 20px;
+    width: 18.75rem;
+    min-width: 15.625rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
     background-color: var(--theme-6);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     box-shadow: var(--box-shadow);
 }
 
 .testimonial-text {
-    height: 45px;
-    margin-bottom: 10px;
+    height: 2.8125rem;
+    margin-bottom: 0.625rem;
     font-style: italic;
     text-align: center;
     word-wrap: break-word;
@@ -95,7 +95,7 @@ section:last-child {
 
 .testimonial-user {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
     justify-content: flex-start;
 }
@@ -106,8 +106,8 @@ section:last-child {
 }
 
 .testimonial-image {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
 }
 
@@ -127,34 +127,33 @@ section:last-child {
 
 /* Section 4 - Ticket Prices and Packages section */
 #ticket-title {
-    margin: 0 80px 20px;
+    margin: 0 5rem 1.25rem;
     text-align: left;
 }
 
 #ticket-options {
     display: flex;
     flex-wrap: wrap;
+    gap: 2.5rem;
     align-items: stretch;
-    justify-content: space-around;
-    margin: 0 40px;
+    justify-content: center;
+    margin: 0 2.5rem 1.25rem;
 }
 
 .ticket-option {
     box-sizing: border-box;
     justify-content: space-between;
-    width: 30%;
-    min-width: 250px;
-    min-height: 200px;
-    padding: 20px;
-    margin-bottom: 20px;
+    width: 22.5rem;
+    min-height: 12.5rem;
+    padding: 1.25rem;
     text-align: center;
     background-color: var(--theme-6);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     box-shadow: var(--box-shadow);
 }
 
 .price {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-size: 2em;
 }
 
@@ -164,13 +163,13 @@ section:last-child {
 
 .select-button {
     align-self: center;
-    padding: 10px 20px;
-    margin-top: 20px;
+    padding: 0.625rem 1.25rem;
+    margin-top: 1.25rem;
     color: white;
     cursor: pointer;
     background-color: var(--theme-2);
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     box-shadow: var(--box-shadow);
 }
 
@@ -180,25 +179,24 @@ section:last-child {
 
 .ticket-option ul {
     flex-grow: 1;
-    height: 120px;
-    padding-left: 40px;
-    margin-bottom: 20px;
+    height: 7.5rem;
+    padding-left: 2.5rem;
+    margin-bottom: 1.25rem;
     text-align: left;
     list-style: disc;
 }
 
 /* Section 5 - Park Facilities section */
 #park-facilities {
-    margin: 20px 80px;
+    margin: 1.25rem 5rem;
     text-align: left;
 }
 
 #facility-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: space-between;
-    margin: 0 80px;
 }
 
 #facility-container a {
@@ -207,10 +205,13 @@ section:last-child {
 }
 
 .facility-section {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr auto;
+    grid-auto-flow: column;
+    overflow: hidden;
     background-color: var(--theme-6);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     box-shadow: var(--box-shadow);
 }
 
@@ -219,72 +220,76 @@ section:last-child {
 }
 
 .facility-text {
-    position: relative;
-    flex: 1;
-    padding: 20px;
-    margin-right: 20px;
+    padding: 1.25rem;
 }
 
 .facility-text h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
     text-align: center;
 }
 
 .facility-text p {
-    margin: 6px 0;
+    margin: 0.375rem 0;
     line-height: 1.6;
 }
 
 .facility-text ul li {
-    margin-left: 20px;
+    margin-left: 1.25rem;
     line-height: 1.6;
 }
 
 .explore-more {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
+    padding: 0 1.25rem 0.75rem;
     color: var(--theme-2);
 }
 
 .facility-image {
-    order: 2;
-    width: 500px;
-    height: auto;
-    border-radius: 0 10px 10px 0;
+    grid-row: span 2;
+    width: 31.25rem;
+    max-width: 40vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.facility-section-link:nth-of-type(even) .facility-section {
+    grid-template-columns: auto 1fr;
+}
+
+.facility-section-link:nth-of-type(even) .facility-image {
+    grid-column: 1;
 }
 
 /* Section 6 - Having a Safe Visit section */
 #safety-container {
-    padding: 0 80px;
-    font-size: 18px;
+    margin: 0 2rem;
+    font-size: 1.125rem;
     text-align: justify;
 }
 
 #safety-title {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 #safety-container p {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 #safety-text ul {
-    padding-left: 20px;
-    margin-bottom: 5px;
+    padding-left: 1.25rem;
+    margin-bottom: 0.3125rem;
     list-style: disc;
 }
 
 /* Section 7 - Map and Working hours section */
 #map-working-hours-container {
     display: flex;
-    margin: 0 40px;
+    gap: 2.5rem;
+    margin: 0 2rem;
 }
 
 #map-container {
     position: relative;
     flex: 1;
-    width: 50%;
 }
 
 #park-map {
@@ -292,23 +297,23 @@ section:last-child {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     box-shadow: var(--box-shadow);
 }
 
 #download-map {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px 20px;
-    font-size: 20px;
+    top: 0.625rem;
+    left: 0.625rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--theme-3);
     cursor: pointer;
     background-color: var(--translucent);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(0.375rem);
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 #download-map:hover {
@@ -316,34 +321,40 @@ section:last-child {
 }
 
 #working-hours {
-    width: 50%;
-    padding: 20px;
-    margin-left: 40px;
+    flex: 1;
+    padding: 1.25rem;
     background-color: var(--theme-6);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     box-shadow: var(--box-shadow);
 }
 
 #working-hours h2 {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 #working-hours table {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     border-collapse: collapse;
 }
 
 #working-hours th {
-    margin-bottom: 4px;
-    font-size: 20px;
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
 }
 
 #working-hours td {
-    padding: 4px 8px;
-    font-size: 18px;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.125rem;
     color: white;
-    border: 1px solid silver;
+    border: 0.0625rem solid silver;
     opacity: 0.9;
+}
+
+@media (max-width: 960px) {
+    #map-working-hours-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }

@@ -5,29 +5,27 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px 0;
+    margin: 2.5rem auto;
 }
 
 section:first-child,
 section:last-child {
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* Styling of brand logo contained in top section */
 h1 {
-    margin: 36px 0;
-    font-size: 128px;
+    margin: 2.25rem 0;
+    font-size: 8rem;
     text-align: center;
 }
 
 /* Styling of slideshow container in top section */
 #slideshow-container {
     position: relative;
-    width: 1000px;
-    padding: 0;
-    margin: 0;
+    max-width: 62.5rem;
     overflow: hidden;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.625rem 0.625rem 0 0;
 }
 
 #slides {
@@ -56,7 +54,6 @@ h1 {
 
 #slides img {
     width: 100%;
-    height: 100%;
     object-fit: contain;
 }
 
@@ -69,11 +66,11 @@ h1 {
     justify-content: center;
     width: 100%;
     height: 100%;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
     user-select: none;
     background-color: var(--opaque);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     opacity: 0;
     transition: 600ms;
 }
@@ -95,13 +92,13 @@ h1 {
 
 #buy-tickets-btn {
     width: 100%;
-    padding: 10px;
-    font-size: 20px;
+    padding: 0.625rem;
+    font-size: 1.25rem;
     color: var(--theme-3);
     text-align: center;
     text-decoration: none;
     background-color: var(--theme-6);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 0.625rem 0.625rem;
 }
 
 #buy-tickets-btn:hover {
@@ -112,7 +109,8 @@ h1 {
 /* Styling of media-review-container contained in media section and visitor-comment-container contained in visitors' comments section */
 .quotes-container {
     position: relative;
-    width: 60%;
+    width: 100%;
+    max-width: 45rem;
 }
 
 .quotes-block {
@@ -120,7 +118,7 @@ h1 {
     inset: 0;
     z-index: -1;
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
     transition: none;
 }
@@ -131,10 +129,10 @@ h1 {
     order: 1;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
     background-color: var(--theme-3);
-    border-radius: 10px 25px;
+    border-radius: 0.625rem 1.5625rem;
     box-shadow: var(--box-shadow);
 }
 
@@ -144,15 +142,16 @@ h1 {
     flex: 1;
     align-items: center;
     justify-content: center;
-    font-size: 19px;
+    padding: 0 2.5rem;
+    font-size: 1.1875rem;
     font-weight: bold;
 }
 
 .quotes-block > figure blockquote::before {
     position: absolute;
     top: 0;
-    left: 8px;
-    font-size: 48px;
+    left: 0.5rem;
+    font-size: 3rem;
     color: var(--theme-2);
     content: open-quote;
 }
@@ -160,27 +159,27 @@ h1 {
 .quotes-block > figure blockquote::after {
     position: absolute;
     /* top or bottom: 0; depends on the length of the content and is unique to the section */
-    right: 8px;
-    font-size: 48px;
+    right: 0.5rem;
+    font-size: 3rem;
     color: var(--theme-2);
     content: close-quote;
 }
 
 .quotes-block > figure figcaption {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--theme-6);
 }
 
 .quotes-block label {
     z-index: 99;
     color: var(--theme-6);
-    text-shadow: 0 0 12px var(--theme-3);
+    text-shadow: 0 0 0.75rem var(--theme-3);
     cursor: pointer;
 }
 
 .quotes-block-status {
     position: absolute;
-    bottom: -40px;
+    bottom: -2.5rem;
     z-index: 99;
     width: 100%;
     text-align: center;
@@ -189,9 +188,9 @@ h1 {
 .quotes-block-status .dots {
     position: relative;
     display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 0 2px;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin: 0 0.125rem;
     cursor: pointer;
     background-color: var(--theme-6);
     border-radius: 50%;
@@ -206,18 +205,19 @@ h1 {
 
 .fa.fa-arrow-circle-left {
     order: -1;
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .fa.fa-arrow-circle-right {
     order: 1;
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 /* Styling unique to media-review-container */
 #media-review-container {
-    padding-bottom: 6%;
-    margin: 50px auto;
+    max-width: 50rem;
+    height: 8rem;
+    margin: 3.125rem auto;
 }
 
 .review-block > figure blockquote::after {
@@ -244,25 +244,27 @@ h1 {
 
 /* Styling of section-popular-attractions-events contained in attractions & events section */
 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 #section-popular-attractions-events {
-    width: 1200px;
-    margin-top: 20px;
+    max-width: 75rem;
+    margin-top: 1.25rem;
     text-align: center;
 }
 
 #section-popular-attractions-events p {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--theme-1);
 }
 
 #attractions-events-gallery {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .attractions-events-box {
@@ -270,24 +272,24 @@ h2 {
     flex-direction: column;
     padding: 0;
     background-color: var(--theme-6);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .attractions-events-image img {
-    width: 280px;
-    height: 200px;
+    width: 17.5rem;
+    height: 12.5rem;
     object-fit: fill;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .attractions-events-text {
-    padding: 10px 30px 0;
-    font-size: 18px;
+    padding: 0.625rem 1.875rem 0;
+    font-size: 1.125rem;
 }
 
 .see-more-btn {
     align-self: flex-end;
-    padding: 15px 30px;
+    padding: 0.9375rem 1.875rem;
     color: var(--theme-2);
     text-decoration: none;
 }
@@ -298,8 +300,9 @@ h2 {
 
 /* Styling unique to visitor-comment-container */
 #visitor-comment-container {
-    padding-bottom: 10%;
-    margin: 50px auto 100px;
+    max-width: 60rem;
+    height: 10rem;
+    margin: 3.125rem auto 6.25rem;
 }
 
 .comment-block > figure blockquote {
