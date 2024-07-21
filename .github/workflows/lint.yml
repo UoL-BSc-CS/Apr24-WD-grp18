@@ -1,0 +1,47 @@
+name: Lint Code
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    lint:
+        permissions: write-all
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+
+            - name: Install dependencies
+              run: npm i
+
+            - name: Run lint
+              run: npm run lint 2> lint-output.txt
+
+            - name: Comment on PR or Commit with lint output if failed
+              if: failure()
+              uses: actions/github-script@v7
+              with:
+                  script: |
+                      const output = require("fs").readFileSync("./lint-output.txt", "utf-8");
+                      const { sha, payload: { pull_request }, repo: { owner, repo } } = context;
+                      const body = `⚠️ There are linting errors in your code:
+
+                      \`\`\`
+                      ${output.replace(/^[\r\n\u2028\u2029]+|[\r\n\u2028\u2029]+$/g, "")}
+                      \`\`\`
+
+                      Please format and fix the files by executing the \`npm run lint:fix\` command.
+                      There may also be errors in the code that require a manual fix.`;
+                      if (pull_request) {
+                          await github.rest.issues.createComment({ owner, repo, body, issue_number: pull_request.number });
+                      } else {
+                          await github.rest.repos.createCommitComment({ owner, repo, body, commit_sha: sha });
+                      }

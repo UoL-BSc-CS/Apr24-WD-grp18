@@ -1,4 +1,6 @@
+import globals from "globals";
 import html from "@html-eslint/eslint-plugin";
+import js from "@eslint/js";
 
 export default [
     {
@@ -24,6 +26,62 @@ export default [
             "@html-eslint/require-meta-description": "error",
             "@html-eslint/require-meta-viewport": "error",
             "@html-eslint/require-open-graph-protocol": "error",
+        },
+    },
+    {
+        languageOptions: {
+            globals: {
+                ...globals.es2025,
+                ...globals.browser,
+            },
+            ecmaVersion: "latest",
+            sourceType: "module",
+            // parserOptions: { project: "jsconfig.json" },
+        },
+        files: ["**/*.js"],
+        rules: {
+            ...js.configs.recommended.rules,
+            "default-case-last": "error",
+            "default-param-last": "error",
+            "eqeqeq": "error",
+            "func-style": ["error", "declaration"],
+            "grouped-accessor-pairs": ["error", "getBeforeSet"],
+            "logical-assignment-operators": "error",
+            "no-array-constructor": "error",
+            "no-control-regex": "off",
+            "no-implied-eval": "error",
+            "no-irregular-whitespace": [
+                "error",
+                {
+                    skipStrings: true,
+                    skipComments: true,
+                    skipRegExps: true,
+                    skipTemplates: true,
+                    skipJSXText: true,
+                },
+            ],
+            "no-loop-func": "warn",
+            "no-negated-condition": "warn",
+            "no-self-compare": "error",
+            "no-template-curly-in-string": "warn",
+            "no-throw-literal": "error",
+            "no-undef-init": "error",
+            "no-unmodified-loop-condition": "warn",
+            "no-unneeded-ternary": "error",
+            "no-unreachable-loop": "warn",
+            "no-useless-computed-key": "error",
+            "no-useless-concat": "error",
+            "no-useless-return": "error",
+            "no-var": "error",
+            "operator-assignment": "error",
+            "prefer-const": "error",
+            "prefer-exponentiation-operator": "error",
+            "prefer-object-spread": "error",
+            "prefer-promise-reject-errors": "error",
+            "prefer-regex-literals": "error",
+            "prefer-rest-params": "error",
+            "prefer-template": "warn",
+            "require-await": "error",
         },
     },
 ];
